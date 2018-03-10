@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PrimsMST;
+package primsmst;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +40,9 @@ import java.util.List;
          @Override
          public String toString(){
              String s = "";
+             for (Edge e: E){
+                 s += e.getStart() + "--" + e.getWeight() + "--" + e.getDest() + "\n";
+             }
             
              return s;
          }
@@ -65,4 +68,16 @@ import java.util.List;
              System.out.println("Edge doesn't exist");
              return -1;
          }
+
+    void setEdgeList(ArrayList<Edge> e) {
+        for (Edge ed:e){
+            E.add(ed);
+        }
+    }
+
+    void setVertList(ArrayList<Vertex> v) {
+        for (Vertex ve: v){
+            V.add(ve);
+        }
+    }
     }

@@ -1,4 +1,4 @@
-package PrimsMST;
+package primsmst;
 
 /**
  * This class implements a priority queue that fits into

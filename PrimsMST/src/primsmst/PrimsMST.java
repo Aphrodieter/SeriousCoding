@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PrimsMST;
+package primsmst;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +74,7 @@ public class PrimsMST {
     }
     
     public void MST(Graph G){
+        List<Vertex> path = new ArrayList<>();
          for (Vertex v : G.getV()){
              v.setKey(Integer.MAX_VALUE);
              v.setParent(null);
@@ -87,6 +88,7 @@ public class PrimsMST {
          Vertex u;
          while (!Q.isEmpty()){
              u = (Vertex) Q.remove();
+             path.add(u);
              for (Vertex v: G.getAdjacent(u)){
                  //System.out.println(u.getLabel() + "----->" + v.getLabel());
                               count++;
@@ -103,9 +105,13 @@ public class PrimsMST {
              }
          }
          
-         for (Vertex v : G.getV()){
-             System.out.println(v.getParent() + "-->" + v.getLabel());
-         }
+//         for (Vertex v : G.getV()){
+//             System.out.println(v.getParent() + "-->" + v.getLabel());
+//         }
+
+        for (Vertex v: path){
+            System.out.println(v);
+        }
          System.out.println(count);
          
     }
@@ -115,13 +121,13 @@ public class PrimsMST {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PrimsMST mst = new PrimsMST();
-        Graph g = mst.createGraph();
-        System.out.println(g);
-        mst.MST(g);
-
-          
-        
+//        PrimsMST mst = new PrimsMST();
+//        Graph g = mst.createGraph();
+//        System.out.println(g);
+//        mst.MST(g);
+          RandomGraph rg = new RandomGraph(4,5);
+          Graph g = rg.generateGraph();
+          System.out.println(g);
         
     }
     

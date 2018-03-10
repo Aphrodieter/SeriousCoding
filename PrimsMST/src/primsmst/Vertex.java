@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PrimsMST;
+package primsmst;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,12 @@ public class Vertex implements Comparable<Vertex>{
          Vertex parent;
          public Vertex(String label){
              this.label = label;
+         }
+         
+         public boolean equals(Vertex other){
+             if (this.getLabel().equals(other.getLabel()))
+                 return true;
+             return false;
          }
          
          public String toString(){
