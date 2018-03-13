@@ -13,7 +13,9 @@ import java.util.List;
  * @author Clemens
  */
 public class PrimsMST {
-    
+               
+    static int count = 0; //runtime measure
+    //method for creating a graph with the exact wishes of the user
     public Graph createGraph(){
         Graph G = new Graph();
         
@@ -73,6 +75,7 @@ public class PrimsMST {
         return G;
     }
     
+    //main algorithm for computing a MST
     public void MST(Graph G){
         List<Vertex> path = new ArrayList<>();
          for (Vertex v : G.getV()){
@@ -83,14 +86,12 @@ public class PrimsMST {
          
          PriorityQueue Q = new PriorityQueue(G.getV());
          
-         
-         int count = 0;
+         count = 0;
          Vertex u;
          while (!Q.isEmpty()){
              u = (Vertex) Q.remove();
              path.add(u);
              for (Vertex v: G.getAdjacent(u)){
-                 //System.out.println(u.getLabel() + "----->" + v.getLabel());
                               count++;
 
                  int w = G.returnWeight(u, v);
@@ -105,29 +106,52 @@ public class PrimsMST {
              }
          }
          
+         //alternative way of getting the final MST path
 //         for (Vertex v : G.getV()){
 //             System.out.println(v.getParent() + "-->" + v.getLabel());
 //         }
 
+        String p = "";
         for (Vertex v: path){
-            System.out.println(v);
+            p += v.getLabel() + "\n"; 
         }
-         System.out.println(count);
+        System.out.println("MST path : \n" + p);
+        System.out.println("Edges considered: " + count);
          
     }
+    
     
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        PrimsMST mst = new PrimsMST();
-//        Graph g = mst.createGraph();
-//        System.out.println(g);
-//        mst.MST(g);
-          RandomGraph rg = new RandomGraph(4,5);
-          Graph g = rg.generateGraph();
-          System.out.println(g);
+        ArrayList<String> measures = new ArrayList<>();
+        ArrayList<String> ver = new ArrayList<>();
+        ArrayList<String> edg = new ArrayList<>();
+        ArrayList<String> run = new ArrayList<>();
+
+        for (int v = 4; v < 10; v++){
+            for (int e = v-1; e <= v*(v-1)/2; e++){
+            RandomGraph rg = new RandomGraph(v,e);
+            Graph g = rg.generateGraph();
+            //System.out.println(g);
+            PrimsMST mst = new PrimsMST();
+            mst.MST(g);
+            measures.add("Vertices: " + v + "\n" +
+                    "Edges: " + e + "\n" + 
+                    "Runtime: " + count + "\n" +
+                    "---------------------------" + "\n");
+            ver.add(v + " ");
+            edg.add(e + " ");
+            run.add(count + " ");
+        }
+            //System.out.println(measures);
+            System.out.println(ver);
+            System.out.println(edg);
+            System.out.println(run);
+        }
+          
         
     }
     

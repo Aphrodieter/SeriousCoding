@@ -22,12 +22,12 @@ public class RandomGraph {
     private final int MAXEDGES;
     private final int MINEDGES;
     int n ;
-
     ArrayList<Edge> e;
     ArrayList<Vertex> v;
     int amountV;
     int amountE;
     
+    //general constructor for purely random results
     public RandomGraph() {
         alphabet = createAlphabet();
         rnd = new Random();
@@ -42,9 +42,11 @@ public class RandomGraph {
 
     }
     
+    //Constructor for the case where you know exactly how many vertices/edges you need
     public RandomGraph(int nrV, int nrE){
         assert nrE >= nrV -1 : "number of edges to low";
         assert nrE <= (nrV*(nrV-1))/2 : "number of edges to high";
+        assert nrV <= MAXVERTICES : "Number of vertices may not exeed " + MAXVERTICES;
         amountV = nrV;
         amountE = nrE;
         alphabet = createAlphabet();
@@ -58,6 +60,7 @@ public class RandomGraph {
     }
    
 
+    //generates amountV Vertices and puts them in a list
     private ArrayList<Vertex> generateVertices() {
 
         ArrayList<Vertex> vertices = new ArrayList();
@@ -69,6 +72,7 @@ public class RandomGraph {
         return vertices;
     }
     
+    //main function for generating random graph
     public Graph generateGraph(){
         Graph g = new Graph();
         int indRoot = rnd.nextInt(v.size());
@@ -90,31 +94,37 @@ public class RandomGraph {
             vCopy.remove(indDest);
         }
         
-        int remainEdges = amountE - MINEDGES;
+        //put all edges in a list which are still possible
+        ArrayList<Edge> leftEdges = getLeftEdges();
         
+        int remainEdges = amountE - MINEDGES;
         //add random edges till amount of edges is satisfied
-        while (remainEdges > 0){
-            start = v.get(rnd.nextInt(v.size()));
-            dest = v.get(rnd.nextInt(v.size()));
-            
-            if (!start.equals(dest) && !existsEdge(start,dest)){
-                w = rnd.nextInt(MAXWEIGHT -1 ) + 1;
-                e.add(new Edge(w,start,dest));
-                remainEdges--;
-            }
+        for (int i = 0; i < remainEdges; i++){
+            int ind = rnd.nextInt(leftEdges.size());
+            e.add(leftEdges.get(ind));
+            leftEdges.remove(ind);
         }
         
-        
-        
-        
+        //alternative method of generating random edges which could result in a better performance in some cases
+//        while (remainEdges > 0){
+//            start = v.get(rnd.nextInt(v.size()));
+//            dest = v.get(rnd.nextInt(v.size()));
+//            
+//            if (!start.equals(dest) && !existsEdge(start,dest)){
+//                w = rnd.nextInt(MAXWEIGHT -1 ) + 1;
+//                e.add(new Edge(w,start,dest));
+//                remainEdges--;
+//            }
+//        }
         g.setEdgeList(e);
         g.setVertList(v);
-        
+        g.setRoot(root);
         
         return g;
     }
     
-    public ArrayList<Vertex> deepCopy(ArrayList<Vertex> v){
+    //copies every element of the list v into another list vCopy
+    private ArrayList<Vertex> deepCopy(ArrayList<Vertex> v){
         ArrayList<Vertex> vCopy = new ArrayList<>();
         for (Vertex ve : v){
             vCopy.add(ve);
@@ -123,33 +133,49 @@ public class RandomGraph {
         return vCopy;
     }
 
+    //method for creating a list filled with the alphabet
     private char[] createAlphabet() {
-        char[] alphabet = new char[26]; // new array// new array// new array// new array
+        char[] alphabet = new char[26];
 
-        for (char ch = 'A'; ch <= 'Z'; ++ch)// fills alphabet array with the alphabet
+        for (char ch = 'A'; ch <= 'Z'; ++ch)
         {
             alphabet[ch - 'A'] = ch;
         }
         return alphabet;
     }
 
-    private boolean allConnected(ArrayList<Edge> edges) {
-        
-        for (Edge e : edges){
-            
+    //checks both the general edge list "e" and the given list "edges" 
+    //wether start and dest form an edge which is already existant in eather one of them
+    private boolean existsEdge(Vertex start, Vertex dest, List<Edge> edges) {
+        for (Edge ed: edges){
+            if (start.equals(ed.getStart()) && dest.equals(ed.getDest()) ||
+                    start.equals(ed.getDest()) && dest.equals(ed.getStart())){
+                return true;
+            } 
         }
-        return true;
-    }
-
-    private boolean existsEdge(Vertex start, Vertex dest) {
         for (Edge ed: e){
             if (start.equals(ed.getStart()) && dest.equals(ed.getDest()) ||
-                    start.equals(ed.getDest()) && dest.equals(ed.getStart()))
+                    start.equals(ed.getDest()) && dest.equals(ed.getStart())){
                 return true;
-            
         }
-        return false;
+        
+    }
+                return false;
     }
 
-    
+    //calculates which edges are still possible to be added to the edge list e
+    private ArrayList<Edge> getLeftEdges() {
+        int w =0;
+        ArrayList<Edge> leftEdges = new ArrayList<>();
+        for (int i = 0; i < v.size(); i++){
+            for (int j = 0; j < v.size(); j++){
+                if (i != j && !existsEdge(v.get(i),v.get(j),leftEdges)){
+                    w = rnd.nextInt(MAXWEIGHT -1 ) + 1;
+                    leftEdges.add( new Edge(w,v.get(i),v.get(j)));
+                }
+            }
+        } 
+        return leftEdges;
+    }
+
 }

@@ -47,6 +47,7 @@ import java.util.List;
              return s;
          }
          
+         //returns list of Vertices that are connected via an edge to Vertex v
          public ArrayList<Vertex> getAdjacent(Vertex v){
              ArrayList<Vertex> adjacent = new ArrayList();
              for (Edge e : E){
@@ -58,7 +59,7 @@ import java.util.List;
              }
              return adjacent;
          }
-         
+         //returns the weight between two vertices
          public int returnWeight(Vertex a, Vertex b){
              for (Edge e: E){
                  if (e.getStart().equals(a) && e.getDest().equals(b) ||

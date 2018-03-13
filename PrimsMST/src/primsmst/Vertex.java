@@ -20,6 +20,7 @@ public class Vertex implements Comparable<Vertex>{
              this.label = label;
          }
          
+         //our own equal method for comparing to vertices with each other
          public boolean equals(Vertex other){
              if (this.getLabel().equals(other.getLabel()))
                  return true;
@@ -53,10 +54,7 @@ public class Vertex implements Comparable<Vertex>{
          }
        
 
-         
-//         public boolean equals(Vertex other){
-//             return this.getLabel().equals(other.getLabel());
-//         }
+    //necessary for the PriorityQueue to compare vertices with regards to their key 
     @Override
     public int compareTo(Vertex t) {
         if (key < t.key)
