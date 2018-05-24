@@ -34,8 +34,9 @@ if __name__ == '__main__':
 	#call the elimination ordering function for example as follows:   
     #ve.run('Alarm', evidence, elim_order)
     ve = VariableElimination(net)
-    evidence = ['MaryCalls']
+    evidence = []
     elim_order = net.nodes
+    prob = net.probabilities
     ve.run('Alarm', evidence, elim_order)
 
  

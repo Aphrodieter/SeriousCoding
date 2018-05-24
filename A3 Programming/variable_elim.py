@@ -34,8 +34,14 @@ class VariableElimination():
                 if not self.isBarren(query,observerd,child):
                     return False
         return True
-        
     
+    def makeFactor(self,table, observed):
+        fac = table
+        names = table.columns.values
+        for evi in observed:
+            if evi in names:
+                fac = fac[fac.evi != observed(evi)]
+        return fac
 
     def run(self, query, observed, elim_order):
         """
@@ -53,15 +59,20 @@ class VariableElimination():
                 for the query variable
 
         """
-        p_query = []
-        nodes_of_interest = []
+        probs = []
         
-        for node in self.network.nodes:
-            if self.isBarren(query,observed, node):
-                print node
-                #p_query.append(self.network.probabilities[node])
+        for node in self.network.probabilities:
+            #append probability dataframes to probs list 
+            if not self.isBarren(query,observed, node):
+                probs.append(self.network.probabilities[node])
+                        
+        factors = {}
+        for df in probs:
+            #make new factor 
+            factors[df.columns.names] = self.makeFactor(df,observed)
         
-        #print 'works?',p_query
+        
+        print 'factors: ', factors
         #print self.hasChildren(elim_order[2])
         #print self.getChildren('Alarm')
 
