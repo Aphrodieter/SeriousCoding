@@ -4,7 +4,7 @@
 Implementation of the variable elimination algorithm for AISPAML assignment 3
 
 """
-
+import copy
 class VariableElimination():
 
     def __init__(self, network):
@@ -40,8 +40,30 @@ class VariableElimination():
         names = table.columns.values
         for evi in observed:
             if evi in names:
-                fac = fac[fac.evi != observed(evi)]
+                #delete all rows where the observerd variable holds
+                fac = fac.ix[fac[evi] != str(observed[evi])]
+                
+        print fac
         return fac
+    
+    def multiplyFactors(self,Z,factors):
+        toMultiply = []
+        for factor in factors:
+            names = factor.columns.values
+            if Z in names:
+                toMultiply.append(factor)
+                
+        newFac = copy.deepCopy(toMultiply)
+
+        for value in self.network.values[Z]:
+            probsToMultiply = []
+            for fac in toMultiply:
+                probsToMultiply.append((fac.ix[fac[Z] == value])[fac.columns[-1]])
+            
+        
+        
+        return probsToMultiply
+                
 
     def run(self, query, observed, elim_order):
         """
@@ -66,13 +88,18 @@ class VariableElimination():
             if not self.isBarren(query,observed, node):
                 probs.append(self.network.probabilities[node])
                         
-        factors = {}
+        factors = []
         for df in probs:
-            #make new factor 
-            factors[df.columns.names] = self.makeFactor(df,observed)
+            #make new factor for every prob table
+            factors.append(self.makeFactor(df,observed))
+            
         
-        
-        print 'factors: ', factors
+        for Z in elim_order:
+            print self.multiplyFactors(Z,factors)
+            
+        #factors
+        #print 'test', self.makeFactor(probs[1],{'Earthquake'})
+        #print 'factors: ', factors
         #print self.hasChildren(elim_order[2])
         #print self.getChildren('Alarm')
 
