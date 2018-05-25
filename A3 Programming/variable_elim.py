@@ -46,12 +46,7 @@ class VariableElimination():
                 fac = fac.ix[fac[evi] != str(observed[evi])]        
         return fac
     
-    def multiplyFactors(self,Z,factors):
-        toMultiply = []
-        for factor in factors:
-            names = factor.columns.values
-            if Z in names:
-                toMultiply.append(factor)
+    def multiplyFactors(self,Z,toMultiply):
         length = len(toMultiply)
         if length == 0:
             return None
@@ -74,17 +69,55 @@ class VariableElimination():
         if fac is not None:
             toSum = []
             for value in self.network.values[Z]:
-                toSum.append(fac.ix[fac[Z] == value])
+                part = fac.ix[fac[Z] == value]
+                if not part.empty:
+                    toSum.append(part)
+            
+            #NEEDS TO BE ABLE TO WORK WITH NON BINARY VARIABLES
             for part in toSum:
                 del part[Z]
-            newFac = pd.merge(toSum[0],toSum[1])
+            
+            if len(toSum) == 1:
+                return toSum[0]
                 
-            print toSum
+            else:
+                #tuple: because nparray isn't hashable
+                newFac = pd.merge(toSum[0],toSum[1],on=tuple(toSum[0].columns.values[:-1]))
+                  
+                newProbs = newFac['prob_x']+newFac['prob_y']
+                newFac['prob'] = newProbs
+                del newFac['prob_x']
+                del newFac['prob_y']
+                #print toSum[0],'\n',toSum[1]
+                return newFac
+
+    def eliminate(self,factors,query,elim_order):
+        for Z in elim_order:
+            if Z == query:
+                continue
+            toMultiply = []
+            toPop = []
+            for ind,factor in enumerate(factors):
+                names = factor.columns.values
+                if Z in names:
+                    toMultiply.append(factor)
+                    toPop.append(ind)
+            
+            for i in toPop:
+                factors.pop(i)
+                toPop[:] = [x - 1 for x in toPop]
+                
+            newFac = self.sumout(Z,self.multiplyFactors(Z,toMultiply))
+            if newFac is not None:
+                factors.append(newFac)
         
+        if len(factors) != 1:
+            raise ValueError('The length of the factor array is still one after applying the elimination algorithm')
         
-        
-        
-        
+        return factors[0]
+    
+    def normalize(self,factors):
+        factors[0] = factors[0].round(4) 
         
     def run(self, query, observed, elim_order):
         """
@@ -114,9 +147,12 @@ class VariableElimination():
             #make new factor for every prob table
             factors.append(self.makeFactor(df,observed))
             
-        newFactors = []
-        for Z in elim_order:
-            newFactors.append(self.sumout(Z,self.multiplyFactors(Z,factors)))
+        
+        self.eliminate(factors,query,elim_order)
+        self.normalize(factors)
+        
+
+        print factors[0]
             
         #factors
         #print 'test', self.makeFactor(probs[1],{'Earthquake'})
