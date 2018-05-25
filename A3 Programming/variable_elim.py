@@ -6,6 +6,7 @@ Implementation of the variable elimination algorithm for AISPAML assignment 3
 """
 import copy
 import pandas as pd
+import numpy as np
 class VariableElimination():
 
     def __init__(self, network):
@@ -49,28 +50,27 @@ class VariableElimination():
     
     def multiplyFactors(self,Z,factors):
         toMultiply = []
-        largest = pd.DataFrame({})
         for factor in factors:
             names = factor.columns.values
             if Z in names:
                 toMultiply.append(factor)
-                if len(factor.columns.values) > len(largest.columns.values):
-                    largest = factor
-        if len(toMultiply) == 1:
-            return largest
+        length = len(toMultiply)
+        if length == 0:
+            return None
+        if length == 1:
+            return toMultiply[0]
         else:
-            newFac = largest.copy()
-            toMultiply.remove(largest)
+            newFac = pd.merge(toMultiply[0],toMultiply[1],on=Z)
+            for i in range(2,length-1):
+                newFac = pd.merge(newFac,toMultiply[i],on=Z)
+
+        newProbs = newFac['prob_x']*newFac['prob_y']
         
-        for value in self.network.values[Z]:
-            for fac in toMultiply:
-                for ind in newFac.iloc[newFac[Z] == value]:
-                    newFac['prob']
-                    probsToMultiply.append((fac.ix[fac[Z] == value]))#[fac.columns[-1]])
-
-        return probsToMultiply
-                
-
+        newFac['prob'] = newProbs
+        del newFac['prob_x']
+        del newFac['prob_y']        
+        return newFac
+            
     def run(self, query, observed, elim_order):
         """
         Use the variable elimination algorithm to find out the probability
