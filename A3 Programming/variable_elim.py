@@ -5,6 +5,7 @@ Implementation of the variable elimination algorithm for AISPAML assignment 3
 
 """
 import copy
+import pandas as pd
 class VariableElimination():
 
     def __init__(self, network):
@@ -48,20 +49,25 @@ class VariableElimination():
     
     def multiplyFactors(self,Z,factors):
         toMultiply = []
+        largest = pd.DataFrame({})
         for factor in factors:
             names = factor.columns.values
             if Z in names:
                 toMultiply.append(factor)
-                
-        newFac = copy.deepCopy(toMultiply)
-
+                if len(factor.columns.values) > len(largest.columns.values):
+                    largest = factor
+        if len(toMultiply) == 1:
+            return largest
+        else:
+            newFac = largest.copy()
+            toMultiply.remove(largest)
+        
         for value in self.network.values[Z]:
-            probsToMultiply = []
             for fac in toMultiply:
-                probsToMultiply.append((fac.ix[fac[Z] == value])[fac.columns[-1]])
-            
-        
-        
+                for ind in newFac.iloc[newFac[Z] == value]:
+                    newFac['prob']
+                    probsToMultiply.append((fac.ix[fac[Z] == value]))#[fac.columns[-1]])
+
         return probsToMultiply
                 
 
@@ -95,7 +101,7 @@ class VariableElimination():
             
         
         for Z in elim_order:
-            print self.multiplyFactors(Z,factors)
+            self.multiplyFactors(Z,factors)
             
         #factors
         #print 'test', self.makeFactor(probs[1],{'Earthquake'})
