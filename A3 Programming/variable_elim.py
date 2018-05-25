@@ -43,9 +43,7 @@ class VariableElimination():
         for evi in observed:
             if evi in names:
                 #delete all rows where the observerd variable holds
-                fac = fac.ix[fac[evi] != str(observed[evi])]
-                
-        print fac
+                fac = fac.ix[fac[evi] != str(observed[evi])]        
         return fac
     
     def multiplyFactors(self,Z,factors):
@@ -67,10 +65,27 @@ class VariableElimination():
         newProbs = newFac['prob_x']*newFac['prob_y']
         
         newFac['prob'] = newProbs
+        
         del newFac['prob_x']
-        del newFac['prob_y']        
+        del newFac['prob_y']
         return newFac
-            
+    
+    def sumout(self,Z,fac):
+        if fac is not None:
+            toSum = []
+            for value in self.network.values[Z]:
+                toSum.append(fac.ix[fac[Z] == value])
+            for part in toSum:
+                del part[Z]
+            newFac = pd.merge(toSum[0],toSum[1])
+                
+            print toSum
+        
+        
+        
+        
+        
+        
     def run(self, query, observed, elim_order):
         """
         Use the variable elimination algorithm to find out the probability
@@ -99,9 +114,9 @@ class VariableElimination():
             #make new factor for every prob table
             factors.append(self.makeFactor(df,observed))
             
-        
+        newFactors = []
         for Z in elim_order:
-            self.multiplyFactors(Z,factors)
+            newFactors.append(self.sumout(Z,self.multiplyFactors(Z,factors)))
             
         #factors
         #print 'test', self.makeFactor(probs[1],{'Earthquake'})
