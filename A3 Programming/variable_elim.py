@@ -53,16 +53,26 @@ class VariableElimination():
         if length == 1:
             return toMultiply[0]
         else:
-            newFac = pd.merge(toMultiply[0],toMultiply[1],on=Z)
-            for i in range(2,length-1):
-                newFac = pd.merge(newFac,toMultiply[i],on=Z)
+            common_values = np.intersect1d(toMultiply[0].columns.values, toMultiply[1].columns.values)
+            newFac = pd.merge(toMultiply[0],toMultiply[1],on=tuple(common_values[:-1]))
+            for i in range(2,length):
+                common_values = np.intersect1d(newFac.columns.values, toMultiply[i].columns.values)
+                #Now the only possible common values are values which don't start with prob. thats why only common_values
+                newFac = pd.merge(newFac,toMultiply[i],on=tuple(common_values))
 
-        newProbs = newFac['prob_x']*newFac['prob_y']
+        #get all column entries where the name of the column starts with 'prob'
+        probCols = [newFac[col] for col in newFac.columns.values if col.startswith('prob')]
+        #delete all columns from newFac where the column name contains 'prob'
+        newFac = newFac[newFac.columns.drop(list(newFac.filter(regex='prob')))]
         
+        #Multiply prob columns with each other
+        newProbs = probCols[0]
+        for i in range(1,len(probCols)):
+            newProbs = newProbs*probCols[i]
+        
+        #assign new prob entry with updated probs
         newFac['prob'] = newProbs
         
-        del newFac['prob_x']
-        del newFac['prob_y']
         return newFac
     
     def sumout(self,Z,fac):
@@ -72,8 +82,8 @@ class VariableElimination():
                 part = fac.ix[fac[Z] == value]
                 if not part.empty:
                     toSum.append(part)
+            #print toSum,'Z',Z
             
-            #NEEDS TO BE ABLE TO WORK WITH NON BINARY VARIABLES
             for part in toSum:
                 del part[Z]
             
@@ -81,15 +91,30 @@ class VariableElimination():
                 return toSum[0]
                 
             else:
+                cols = toSum[0].columns.values
                 #tuple: because nparray isn't hashable
-                newFac = pd.merge(toSum[0],toSum[1],on=tuple(toSum[0].columns.values[:-1]))
+                if len(cols) > 1:
+                    on = tuple(cols[:-1])
+                else:
+                    return None
+                newFac = pd.merge(toSum[0],toSum[1],on=on)
+                for i in range(2,len(toSum)):
+                    newFac = pd.merge(newFac,toSum[i],on=on)
                   
-                newProbs = newFac['prob_x']+newFac['prob_y']
+                #get all column entries where the name of the column starts with 'prob'
+                probCols = [newFac[col] for col in newFac.columns.values if col.startswith('prob')]
+        
+                #delete all columns from newFac where the column name contains 'prob'
+                newFac = newFac[newFac.columns.drop(list(newFac.filter(regex='prob')),inplace = True)]
+        
+                #add prob columns on each other
+                newProbs = probCols[0]
+                for i in range(1,len(probCols)):
+                    newProbs = newProbs+probCols[i]
+        
+                #assign new prob entry with updated probs
                 newFac['prob'] = newProbs
-                del newFac['prob_x']
-                del newFac['prob_y']
-                #print toSum[0],'\n',toSum[1]
-                return newFac
+            return newFac
 
     def eliminate(self,factors,query,elim_order):
         for Z in elim_order:
@@ -112,7 +137,7 @@ class VariableElimination():
                 factors.append(newFac)
         
         if len(factors) != 1:
-            raise ValueError('The length of the factor array is still one after applying the elimination algorithm')
+            raise ValueError('The length of the factor array is still not one after applying the elimination algorithm')
         
         return factors[0]
     
@@ -135,6 +160,8 @@ class VariableElimination():
                 for the query variable
 
         """
+        if query not in self.network.nodes:
+            raise ValueError('No node with name',query)
         probs = []
         
         for node in self.network.probabilities:

@@ -10,15 +10,13 @@ from variable_elim import *
 if __name__ == '__main__':
     # the class BayesNet represents a Bayesian network from a .bif file
     # in several variables
-    net = BayesNet('earthquake.bif') 
+    net = BayesNet('alarm.bif') 
     
     # these are the variables that should be used for variable elimination
-# =============================================================================
-#     print ('values', net.values) 
-#     print ('probabilities', net.probabilities)
-#     print ('parents', net.parents)
-#     print ('nodes', net.nodes)
-# =============================================================================
+    #print ('values', net.values) 
+    #print ('probabilities', net.probabilities)
+    #print ('parents', net.parents)
+    #print ('nodes', net.nodes)
 
     
     # Make your variable elimination code in a seperate file: 'variable_elim'. 
@@ -39,6 +37,6 @@ if __name__ == '__main__':
     evidence = {}#{'Earthquake': True}
     elim_order = net.nodes
     prob = net.probabilities
-    ve.run('Alarm', evidence, elim_order)
+    ve.run('CVP', evidence, elim_order)
 
  
