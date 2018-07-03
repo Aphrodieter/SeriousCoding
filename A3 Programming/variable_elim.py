@@ -38,12 +38,12 @@ class VariableElimination():
         return True
     
     def makeFactor(self,table, observed):
-        fac = table
+        fac = table.copy()
         names = table.columns.values
         for evi in observed:
             if evi in names:
                 #delete all rows where the observerd variable holds
-                fac = fac.ix[fac[evi] != str(observed[evi])]        
+                fac = fac.ix[fac[evi] == str(observed[evi])]        
         return fac
     
     def multiplyFactors(self,Z,toMultiply):
@@ -105,7 +105,7 @@ class VariableElimination():
                 probCols = [newFac[col] for col in newFac.columns.values if col.startswith('prob')]
         
                 #delete all columns from newFac where the column name contains 'prob'
-                newFac = newFac[newFac.columns.drop(list(newFac.filter(regex='prob')),inplace = True)]
+                newFac = newFac[newFac.columns.drop(list(newFac.filter(regex='prob')))]
         
                 #add prob columns on each other
                 newProbs = probCols[0]
@@ -116,9 +116,9 @@ class VariableElimination():
                 newFac['prob'] = newProbs
             return newFac
 
-    def eliminate(self,factors,query,elim_order):
+    def eliminate(self,factors,query,observed,elim_order):
         for Z in elim_order:
-            if Z == query:
+            if Z == query or Z in observed:
                 continue
             toMultiply = []
             toPop = []
@@ -135,14 +135,16 @@ class VariableElimination():
             newFac = self.sumout(Z,self.multiplyFactors(Z,toMultiply))
             if newFac is not None:
                 factors.append(newFac)
-        
+                
+        #deleting evidence from factors
+        factors = [factor for factor in factors if query in factor.columns.values]
         if len(factors) != 1:
             raise ValueError('The length of the factor array is still not one after applying the elimination algorithm')
         
+        #normalize
+        factors[0] = factors[0].round(4) 
         return factors[0]
     
-    def normalize(self,factors):
-        factors[0] = factors[0].round(4) 
         
     def run(self, query, observed, elim_order):
         """
@@ -175,11 +177,9 @@ class VariableElimination():
             factors.append(self.makeFactor(df,observed))
             
         
-        self.eliminate(factors,query,elim_order)
-        self.normalize(factors)
+        print self.eliminate(factors,query,observed,elim_order)
         
 
-        print factors[0]
             
         #factors
         #print 'test', self.makeFactor(probs[1],{'Earthquake'})
