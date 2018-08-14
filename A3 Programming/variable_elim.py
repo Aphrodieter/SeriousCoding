@@ -97,24 +97,30 @@ class VariableElimination():
                     on = tuple(cols[:-1])
                 else:
                     return None
-                newFac = pd.merge(toSum[0],toSum[1],on=on)
+                newFac = self.addProbs(pd.merge(toSum[0],toSum[1],on=on))
+                                
+                
                 for i in range(2,len(toSum)):
-                    newFac = pd.merge(newFac,toSum[i],on=on)
+                    newFac = self.addProbs(pd.merge(newFac,toSum[i],on=on))
                   
-                #get all column entries where the name of the column starts with 'prob'
-                probCols = [newFac[col] for col in newFac.columns.values if col.startswith('prob')]
-        
-                #delete all columns from newFac where the column name contains 'prob'
-                newFac = newFac[newFac.columns.drop(list(newFac.filter(regex='prob')))]
-        
-                #add prob columns on each other
-                newProbs = probCols[0]
-                for i in range(1,len(probCols)):
-                    newProbs = newProbs+probCols[i]
-        
-                #assign new prob entry with updated probs
-                newFac['prob'] = newProbs
+                
             return newFac
+        
+    def addProbs(self,newFac):
+        #get all column entries where the name of the column starts with 'prob'
+        probCols = [newFac[col] for col in newFac.columns.values if col.startswith('prob')]
+
+        #delete all columns from newFac where the column name contains 'prob'
+        newFac = newFac[newFac.columns.drop(list(newFac.filter(regex='prob')))]
+
+        #add prob columns on each other
+        newProbs = probCols[0]
+        for i in range(1,len(probCols)):
+            newProbs = newProbs+probCols[i]
+
+        #assign new prob entry with updated probs
+        newFac['prob'] = newProbs
+        return newFac
 
     def eliminate(self,factors,query,observed,elim_order):
         for Z in elim_order:
@@ -142,7 +148,7 @@ class VariableElimination():
             raise ValueError('The length of the factor array is still not one after applying the elimination algorithm')
         
         #normalize
-        factors[0] = factors[0].round(4) 
+        factors[0]['prob'] = factors[0]['prob'].apply(lambda x : x/(factors[0]['prob'].sum()))
         return factors[0]
     
         
