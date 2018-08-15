@@ -72,7 +72,7 @@ class VariableElimination():
         
         #assign new prob entry with updated probs
         newFac['prob'] = newProbs
-        
+        self.multiplication_steps += 1
         return newFac
     
     def sumout(self,Z,fac):
@@ -87,6 +87,9 @@ class VariableElimination():
             for part in toSum:
                 del part[Z]
             
+            if len(toSum) == 0:
+                return None
+            
             if len(toSum) == 1:
                 return toSum[0]
                 
@@ -97,13 +100,10 @@ class VariableElimination():
                     on = tuple(cols[:-1])
                 else:
                     return None
-                newFac = self.addProbs(pd.merge(toSum[0],toSum[1],on=on))
-                                
-                
+                newFac = self.addProbs(pd.merge(toSum[0],toSum[1],on=on))                               
                 for i in range(2,len(toSum)):
                     newFac = self.addProbs(pd.merge(newFac,toSum[i],on=on))
-                  
-                
+            self.addition_steps += 1
             return newFac
         
     def addProbs(self,newFac):
@@ -184,6 +184,7 @@ class VariableElimination():
             
         
         print self.eliminate(factors,query,observed,elim_order)
+        print 'addition steps: ',self.addition_steps, 'multiplication steps:',self.multiplication_steps
         
 
             

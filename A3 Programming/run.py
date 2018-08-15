@@ -6,11 +6,13 @@ Entry point for testing the variable elimination algorithm
 """
 from read_bayesnet import BayesNet
 from variable_elim import *
+import time
 
 if __name__ == '__main__':
     # the class BayesNet represents a Bayesian network from a .bif file
     # in several variables
-    net = BayesNet('hailfinder.bif') 
+    start = time.time()
+    net = BayesNet('munin.bif')#  
     
     # these are the variables that should be used for variable elimination
     #print ('values', net.values) 
@@ -34,9 +36,10 @@ if __name__ == '__main__':
 	#call the elimination ordering function for example as follows:   
     #ve.run('Alarm', evidence, elim_order)
     ve = VariableElimination(net)
-    evidence = {'SynForcng': 'SigNegative'}#'Earthquake': True, 'Burglary': False}#{'Earthquake': True}
+    evidence = {}#'CHOOSE35': True, 'DISPLACEM0': False}#'SynForcng': 'SigNegative', 'AreaMoDryAir': 'VeryWet', 'CombMoisture': 'Neutral'}#}#{{}#}
     elim_order = net.nodes
     prob = net.probabilities
-    ve.run('Dewpoints', evidence, elim_order)
-
+    ve.run('L_APB_EFFMUS', evidence, elim_order)#)#')
+    end = time.time()
+    print('time passed: ',end-start)
  
