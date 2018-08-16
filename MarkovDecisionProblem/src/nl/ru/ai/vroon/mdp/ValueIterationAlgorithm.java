@@ -5,10 +5,11 @@
  */
 package nl.ru.ai.vroon.mdp;
 
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -41,11 +42,12 @@ public class ValueIterationAlgorithm {
                 //System.out.println(oldStateUtilities[x][y]);
                 if (mdp.getField(x, y) != Field.OBSTACLE) {
                     utils = getUtils(x, y);
-                    reversedUtils = reverseMap(utils);
-                    Set<Double> values = reversedUtils.keySet();
-                    values.remove(null);
-                    Action bestAction = reversedUtils.get(Collections.max(values));
-                    utils = reversedUtils.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
+                    Action bestAction = getBestAction(utils);
+//                    reversedUtils = reverseMap(utils);
+//                    Set<Double> values = reversedUtils.keySet();
+//                    values.remove(null);
+//                    Action bestAction = reversedUtils.get(Collections.max(values));
+//                    utils = reversedUtils.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
                     //System.out.println(getBestAction(x, y) + " " + x + " , " + y);
                     stateUtilities[x][y] = mdp.getpPerform() * (mdp.getReward() + discount * utils.get(bestAction))
                             + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.nextAction(bestAction)))
@@ -60,7 +62,7 @@ public class ValueIterationAlgorithm {
     }
 
     private Map getUtils(int x, int y) {
-        Map<Action, Double> utils = new HashMap<>();
+        Map<Action, Double> utils = new LinkedHashMap<>();
         Double thisState = oldStateUtilities[x][y];
         int right = x + 1;
         int left = x - 1;
@@ -136,6 +138,23 @@ public class ValueIterationAlgorithm {
     private Map reverseMap(Map<Action, Double> utils) {
         Map<Double, Action> mapInversed = utils.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
         return mapInversed;
+    }
+
+    private Action getBestAction(Map<Action, Double> utils) {
+        Double bestValue = -10000000.0;
+        Action bestAction = null;
+        List<Double> values = new ArrayList(utils.values());
+        List<Action> actions = new ArrayList(utils.keySet());
+        for (int i = 0; i < utils.size(); i++){
+            Double value = values.get(i);
+            if (value > bestValue){
+                bestValue = value;
+                bestAction = actions.get(i);
+            }
+            
+                
+        }
+        return bestAction;
     }
 
 }
