@@ -22,6 +22,8 @@ public class ValueIterationAlgorithm {
     Double[][] stateUtilities;
     Double[][] oldStateUtilities;
     Double discount;
+    Double sigma = 10.0;
+    int counter = 0; 
 
     public ValueIterationAlgorithm() {
         discount = 0.9;
@@ -36,27 +38,42 @@ public class ValueIterationAlgorithm {
     public void valueIteration() {
         Map<Action, Double> utils;
         Map<Double, Action> reversedUtils;
+        Boolean done = false;
 
-        for (int x = 0; x < mdp.getWidth(); x++) {
-            for (int y = 0; y < mdp.getHeight(); y++) {
-                //System.out.println(oldStateUtilities[x][y]);
-                if (mdp.getField(x, y) != Field.OBSTACLE) {
-                    utils = getUtils(x, y);
-                    Action bestAction = getBestAction(utils);
+        while (!done) {
+            
+            for (int x = 0; x < mdp.getWidth(); x++) {
+                for (int y = 0; y < mdp.getHeight(); y++) {
+                    //System.out.println(oldStateUtilities[x][y]);
+                    if (mdp.getField(x, y) != Field.OBSTACLE) {
+                        utils = getUtils(x, y);
+                        Action bestAction = getBestAction(utils);
 //                    reversedUtils = reverseMap(utils);
 //                    Set<Double> values = reversedUtils.keySet();
 //                    values.remove(null);
 //                    Action bestAction = reversedUtils.get(Collections.max(values));
 //                    utils = reversedUtils.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
-                    //System.out.println(getBestAction(x, y) + " " + x + " , " + y);
-                    stateUtilities[x][y] = mdp.getpPerform() * (mdp.getReward() + discount * utils.get(bestAction))
-                            + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.nextAction(bestAction)))
-                            + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.previousAction(bestAction)))
-                            + mdp.getpBackstep() * (mdp.getReward() + discount * utils.get(Action.backAction(bestAction)))
-                            + mdp.getPNoStep() * (mdp.getReward() + discount * oldStateUtilities[x][y]);
+                        //System.out.println(getBestAction(x, y) + " " + x + " , " + y);
+                        stateUtilities[x][y] = mdp.getpPerform() * (mdp.getReward() + discount * utils.get(bestAction))
+                                + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.nextAction(bestAction)))
+                                + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.previousAction(bestAction)))
+                                + mdp.getpBackstep() * (mdp.getReward() + discount * utils.get(Action.backAction(bestAction)))
+                                + mdp.getPNoStep() * (mdp.getReward() + discount * oldStateUtilities[x][y]);
+                        
+                    }
                 }
-            }
 
+            }
+            done = checkDifference(oldStateUtilities, stateUtilities, sigma);
+            oldStateUtilities = stateUtilities.clone();
+            System.out.println(counter);
+            counter++;
+        }
+
+        for (int x = 0; x < mdp.getWidth(); x++) {
+            for (int y = 0; y < mdp.getHeight(); y++) {
+                System.out.println("x: " + x + "y: " + y + " val: " + stateUtilities[x][y]);
+            }
         }
 
     }
@@ -71,23 +88,23 @@ public class ValueIterationAlgorithm {
         if (right < mdp.getWidth()) {
             Double rightState = oldStateUtilities[right][y];
             if (rightState != null) {
-                utils.put(Action.RIGHT,rightState);
+                utils.put(Action.RIGHT, rightState);
             } else {
-                utils.put(Action.RIGHT,thisState);
+                utils.put(Action.RIGHT, thisState);
             }
 
         } else {
-            utils.put(Action.RIGHT,thisState);
+            utils.put(Action.RIGHT, thisState);
         }
         if (left >= 0) {
             Double leftState = oldStateUtilities[left][y];
             if (leftState != null) {
-                utils.put(Action.LEFT,leftState);
+                utils.put(Action.LEFT, leftState);
             } else {
                 utils.put(Action.LEFT, thisState);
             }
         } else {
-            utils.put( Action.LEFT,thisState);
+            utils.put(Action.LEFT, thisState);
         }
         if (up < mdp.getHeight()) {
             Double upState = oldStateUtilities[x][up];
@@ -126,9 +143,9 @@ public class ValueIterationAlgorithm {
                 if (mdp.getField(i, j) == Field.EMPTY) {
                     oldStateUtilities[i][j] = 0.0;
                 } else if (mdp.getField(i, j) == Field.NEGREWARD) {
-                    oldStateUtilities[i][j] = -1.0;
+                    oldStateUtilities[i][j] = -100.0;
                 } else if (mdp.getField(i, j) == Field.REWARD) {
-                    oldStateUtilities[i][j] = 1.0;
+                    oldStateUtilities[i][j] = 100.0;
                 }
             }
 
@@ -145,16 +162,30 @@ public class ValueIterationAlgorithm {
         Action bestAction = null;
         List<Double> values = new ArrayList(utils.values());
         List<Action> actions = new ArrayList(utils.keySet());
-        for (int i = 0; i < utils.size(); i++){
+        for (int i = 0; i < utils.size(); i++) {
             Double value = values.get(i);
-            if (value > bestValue){
+            if (value > bestValue) {
                 bestValue = value;
                 bestAction = actions.get(i);
             }
-            
-                
+
         }
         return bestAction;
+    }
+
+    private Boolean checkDifference(Double[][] old, Double[][] newU, Double sigma) {
+        Double[][] difference = new Double[mdp.getWidth()][mdp.getHeight()];
+        for (int x = 0; x < mdp.getWidth(); x++) {
+            for (int y = 0; y < mdp.getHeight(); y++) {
+                if (newU[x][y] != null || old[x][y] != null) {
+                    difference[x][y] = newU[x][y] - old[x][y];
+                    if (difference[x][y] > sigma) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
     }
 
 }
