@@ -360,6 +360,24 @@ public class MarkovDecisionProblem {
 	 * Returns the x-position of the current state
 	 * @return a number between 0 and width
 	 */
+        
+        public Double getpPerform(){
+            return pPerform;
+        }
+        
+        public Double getSideStep(){
+            return pSidestep;
+        }
+        
+        public Double getpBackstep(){
+            return pBackstep;
+        }
+        
+        public Double getPNoStep(){
+            return pNoStep;
+        }
+        
+        
 	public int getStateXPosition(){
 		return xPosition;
 	}

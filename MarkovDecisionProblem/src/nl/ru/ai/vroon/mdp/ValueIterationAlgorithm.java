@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -19,49 +20,62 @@ public class ValueIterationAlgorithm {
     MarkovDecisionProblem mdp;
     Double[][] stateUtilities;
     Double[][] oldStateUtilities;
+    Double discount;
 
     public ValueIterationAlgorithm() {
+        discount = 0.9;
         mdp = new MarkovDecisionProblem();
         mdp.setInitialState(0, 0);
         stateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
         oldStateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
         initStateUtility(oldStateUtilities);
-        
+
     }
 
     public void valueIteration() {
+        Map<Double, Action> utils;
+        Map<Action, Double> reversedUtils;
         for (int x = 0; x < mdp.getWidth(); x++) {
             for (int y = 0; y < mdp.getHeight(); y++) {
                 //System.out.println(oldStateUtilities[x][y]);
-                System.out.println(getBestAction(x,y) + " " + x + " , " + y);
-                //stateUtilities[x][y] = 
-               
+                utils = getUtils(x, y);
+                Set<Double> values = utils.keySet();
+                values.remove(null);
+                Action bestAction = utils.get(Collections.max(values));
+                reversedUtils = reverseMap(utils);
+                //System.out.println(getBestAction(x, y) + " " + x + " , " + y);
+                stateUtilities[x][y] = mdp.getpPerform() * (mdp.getReward() + discount * reversedUtils.get(bestAction))
+                        + mdp.getSideStep() / 2 * (mdp.getReward() + discount * reversedUtils.get(Action.nextAction(bestAction)))
+                        + mdp.getSideStep() / 2 * (mdp.getReward() + discount * reversedUtils.get(Action.previousAction(bestAction)))
+                        + mdp.getpBackstep() * (mdp.getReward() + discount * reversedUtils.get(Action.backAction(bestAction)))
+                        + mdp.getPNoStep() * (mdp.getReward() + discount * oldStateUtilities[x][y]);
+
             }
 
         }
 
     }
-    
-    private Action getBestAction(int x, int y){
-        Map<Double,Action> utils = new HashMap<>();
+
+    private Map getUtils(int x, int y) {
+        Map<Double, Action> utils = new HashMap<>();
         int right = x + 1;
         int left = x - 1;
         int up = y + 1;
         int down = y - 1;
-        if (right < mdp.getWidth())
-            utils.put(oldStateUtilities[right][y],Action.RIGHT);
-        if (left >= 0)
+        if (right < mdp.getWidth()) {
+            utils.put(oldStateUtilities[right][y], Action.RIGHT);
+        }
+        if (left >= 0) {
             utils.put(oldStateUtilities[left][y], Action.LEFT);
-        if (up < mdp.getHeight())
+        }
+        if (up < mdp.getHeight()) {
             utils.put(oldStateUtilities[x][up], Action.UP);
-        if (down >= 0)
+        }
+        if (down >= 0) {
             utils.put(oldStateUtilities[x][down], Action.DOWN);
-        
-        Set<Double> values = utils.keySet();
-        values.remove(null);
-        Action bestAction = utils.get(Collections.max(values)); 
-        
-        return bestAction;
+        }
+
+        return utils;
     }
 
     /**
@@ -83,6 +97,11 @@ public class ValueIterationAlgorithm {
             }
 
         }
+    }
+
+    private Map reverseMap(Map<Double, Action> utils) {
+        Map<Action, Double> mapInversed = utils.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
+        return mapInversed;
     }
 
 }
