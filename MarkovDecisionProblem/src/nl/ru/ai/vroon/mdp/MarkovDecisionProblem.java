@@ -58,6 +58,7 @@ public class MarkovDecisionProblem {
 	
 	// Counts the number of actions that has been performed
 	private int actionsCounter = 0;
+        private Double[][] rewardMatrix;
 	
 	/////////////////////////////////////////////////////////
 	/// FUNCTIONS
@@ -82,6 +83,9 @@ public class MarkovDecisionProblem {
 		setField(1,1,Field.OBSTACLE);
 		setField(3,1,Field.NEGREWARD);
 		setField(3,2,Field.REWARD);
+                
+                initRewardMatrix();
+                            
 		
 		// Draw yourself:
 		pDrawMDP();
@@ -377,6 +381,13 @@ public class MarkovDecisionProblem {
             return pNoStep;
         }
         
+        public Double getPosReward(){
+            return posReward;
+        }
+        
+        public Double getNoReward(){
+            return noReward;
+        }
         
 	public int getStateXPosition(){
 		return xPosition;
@@ -502,6 +513,27 @@ public class MarkovDecisionProblem {
 	public void setShowProgress(boolean show){
 		showProgress = show;
 	}
+
+    private void initRewardMatrix() {
+    rewardMatrix = new Double[width][height];
+                for (int i = 0; i < width; i++){
+			for (int j = 0; j < height; j++){
+                            switch (this.getField(i, j)){
+                                case REWARD: rewardMatrix[i][j] = posReward;
+                                break;
+                                case NEGREWARD: rewardMatrix[i][j] = negReward;
+                                break;
+                                case EMPTY: rewardMatrix[i][j] = noReward;
+                                break;
+                                case OBSTACLE: rewardMatrix[i][j] = 0.0;
+                            }
+                        }
+                }    
+    }
+    
+    public Double getReward(int x, int y){
+        return rewardMatrix[x][y];
+    }
 	
         
 }

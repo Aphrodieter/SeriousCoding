@@ -19,25 +19,25 @@ import java.util.stream.Collectors;
 public class ValueIterationAlgorithm {
 
     MarkovDecisionProblem mdp;
-    Double[][] stateUtilities;
-    Double[][] oldStateUtilities;
+    
     Double discount;
-    Double sigma = 10.0;
+    Double sigma = 0.1;
     int counter = 0; 
 
     public ValueIterationAlgorithm() {
-        discount = 0.9;
+        discount = 1.0;
         mdp = new MarkovDecisionProblem();
         mdp.setInitialState(0, 0);
-        stateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
-        oldStateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
-        initStateUtility(oldStateUtilities);
+        
 
     }
 
     public void valueIteration() {
         Map<Action, Double> utils;
         Map<Double, Action> reversedUtils;
+        Double[][] stateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
+        Double[][] oldStateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
+        initStateUtility(oldStateUtilities);
         Boolean done = false;
 
         while (!done) {
@@ -45,8 +45,8 @@ public class ValueIterationAlgorithm {
             for (int x = 0; x < mdp.getWidth(); x++) {
                 for (int y = 0; y < mdp.getHeight(); y++) {
                     //System.out.println(oldStateUtilities[x][y]);
-                    if (mdp.getField(x, y) != Field.OBSTACLE) {
-                        utils = getUtils(x, y);
+                    //if (mdp.getField(x, y) != Field.OBSTACLE) {
+                        utils = getUtils(x, y, oldStateUtilities);
                         Action bestAction = getBestAction(utils);
 //                    reversedUtils = reverseMap(utils);
 //                    Set<Double> values = reversedUtils.keySet();
@@ -54,18 +54,21 @@ public class ValueIterationAlgorithm {
 //                    Action bestAction = reversedUtils.get(Collections.max(values));
 //                    utils = reversedUtils.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
                         //System.out.println(getBestAction(x, y) + " " + x + " , " + y);
-                        stateUtilities[x][y] = mdp.getpPerform() * (mdp.getReward() + discount * utils.get(bestAction))
-                                + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.nextAction(bestAction)))
-                                + mdp.getSideStep() / 2 * (mdp.getReward() + discount * utils.get(Action.previousAction(bestAction)))
-                                + mdp.getpBackstep() * (mdp.getReward() + discount * utils.get(Action.backAction(bestAction)))
-                                + mdp.getPNoStep() * (mdp.getReward() + discount * oldStateUtilities[x][y]);
+                        Double reward = mdp.getReward(x,y);
+                        stateUtilities[x][y] = mdp.getpPerform() * (reward + discount * utils.get(bestAction))
+                                    + mdp.getSideStep() / 2 * (reward + discount * utils.get(Action.nextAction(bestAction)))
+                                    + mdp.getSideStep() / 2 * (reward + discount * utils.get(Action.previousAction(bestAction)))
+                                    + mdp.getpBackstep() * (reward + discount * utils.get(Action.backAction(bestAction)))
+                                    + mdp.getPNoStep() * (reward + discount * oldStateUtilities[x][y]);
+                    
+                            
                         
                     }
-                }
+                //}
 
             }
-            done = checkDifference(oldStateUtilities, stateUtilities, sigma);
-            oldStateUtilities = stateUtilities.clone();
+            done = checkDifference(stateUtilities, oldStateUtilities,sigma);
+            oldStateUtilities = duplicate(stateUtilities);
             System.out.println(counter);
             counter++;
         }
@@ -78,7 +81,7 @@ public class ValueIterationAlgorithm {
 
     }
 
-    private Map getUtils(int x, int y) {
+    private Map getUtils(int x, int y, Double[][] oldStateUtilities) {
         Map<Action, Double> utils = new LinkedHashMap<>();
         Double thisState = oldStateUtilities[x][y];
         int right = x + 1;
@@ -138,18 +141,23 @@ public class ValueIterationAlgorithm {
      * @param stateValues
      */
     private void initStateUtility(Double[][] oldStateUtilities) {
-        for (int i = 0; i < mdp.getWidth(); i++) {
+//        for (int i = 0; i < mdp.getWidth(); i++) {
+//            for (int j = 0; j < mdp.getHeight(); j++) {
+//                if (mdp.getField(i, j) == Field.EMPTY) {
+//                    oldStateUtilities[i][j] = 0.0;
+//                } else if (mdp.getField(i, j) == Field.NEGREWARD) {
+//                    oldStateUtilities[i][j] = -100.0;
+//                } else if (mdp.getField(i, j) == Field.REWARD) {
+//                    oldStateUtilities[i][j] = 100.0;
+//                }
+//            }
+//
+//        }
+    for (int i = 0; i < mdp.getWidth(); i++) {
             for (int j = 0; j < mdp.getHeight(); j++) {
-                if (mdp.getField(i, j) == Field.EMPTY) {
-                    oldStateUtilities[i][j] = 0.0;
-                } else if (mdp.getField(i, j) == Field.NEGREWARD) {
-                    oldStateUtilities[i][j] = -100.0;
-                } else if (mdp.getField(i, j) == Field.REWARD) {
-                    oldStateUtilities[i][j] = 100.0;
-                }
+                oldStateUtilities[i][j] = 0.0;
             }
-
-        }
+    }
     }
 
     private Map reverseMap(Map<Action, Double> utils) {
@@ -173,19 +181,29 @@ public class ValueIterationAlgorithm {
         return bestAction;
     }
 
-    private Boolean checkDifference(Double[][] old, Double[][] newU, Double sigma) {
-        Double[][] difference = new Double[mdp.getWidth()][mdp.getHeight()];
+    private Boolean checkDifference(Double[][] stateUtilities, Double[][] oldStateUtilities,Double sigma) {
+        Double difference = 0.0;
         for (int x = 0; x < mdp.getWidth(); x++) {
             for (int y = 0; y < mdp.getHeight(); y++) {
-                if (newU[x][y] != null || old[x][y] != null) {
-                    difference[x][y] = newU[x][y] - old[x][y];
-                    if (difference[x][y] > sigma) {
+                    difference = stateUtilities[x][y] - oldStateUtilities[x][y];
+                    if (Math.abs(difference) > sigma) {
                         return false;
                     }
-                }
+                
             }
         }
         return true;
     }
+
+    private Double[][] duplicate(Double[][] stateUtilities) {
+        Double[][] clone = new Double[stateUtilities.length][stateUtilities[0].length];
+        for (int i = 0; i < stateUtilities.length; i++){
+            for (int j = 0; j < stateUtilities[0].length; j++)
+            clone[i][j] = stateUtilities[i][j];
+        }
+        return clone;
+    }
+
+    
 
 }
