@@ -109,6 +109,15 @@ public class MarkovDecisionProblem {
 		for (int i = 0; i < this.height; i++)
 			for (int j = 0; j < this.width; j++)
 				landscape[j][i] = Field.EMPTY;
+                
+                setField(1,1,Field.OBSTACLE);
+		setField(5,0,Field.NEGREWARD);
+                setField(3,14,Field.NEGREWARD);
+                setField(4,13,Field.NEGREWARD);
+		setField(7,15,Field.REWARD);
+                
+                
+                initRewardMatrix();
 		pDrawMDP();
 	}
 	
@@ -369,7 +378,7 @@ public class MarkovDecisionProblem {
             return pPerform;
         }
         
-        public Double getSideStep(){
+        public Double getPSideStep(){
             return pSidestep;
         }
         

@@ -15,6 +15,7 @@ public class Main {
 
         ValueIterationAlgorithm v = new ValueIterationAlgorithm();
         v.valueIteration();
+        v.ApplyPolicy();
 //		MarkovDecisionProblem mdp = new MarkovDecisionProblem();
 //		mdp.setInitialState(0, 0);
 //                
