@@ -3,6 +3,8 @@ package nl.ru.ai.vroon.mdp;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 import javax.swing.JPanel;
 
@@ -17,6 +19,7 @@ public class DrawPanel extends JPanel {
 	private int screenWidth;
 	private int screenHeight;
 	private MarkovDecisionProblem mdp;
+        private ValueIterationAlgorithm va;
 	
 	/**
 	 * Constructor
@@ -24,8 +27,9 @@ public class DrawPanel extends JPanel {
 	 * @param screenWidth
 	 * @param screenHeight
 	 */
-	public DrawPanel(MarkovDecisionProblem mdp, int screenWidth, int screenHeight) {
+	public DrawPanel(MarkovDecisionProblem mdp,ValueIterationAlgorithm va, int screenWidth, int screenHeight) {
 		this.mdp = mdp;
+                this.va = va;
 		this.screenWidth = screenWidth;
 		this.screenHeight = screenHeight;		
 	}
@@ -52,6 +56,7 @@ public class DrawPanel extends JPanel {
 					g2.setPaint(Color.GRAY);
 				} 
 				g2.fillRect(stepSizeX*i, screenHeight - stepSizeY*(j+1), stepSizeX,stepSizeY);
+                                                                
 				
 				if ( mdp.getStateXPosition() == i && mdp.getStateYPostion() == j ) {
 					g2.setPaint(Color.BLUE);
@@ -60,10 +65,19 @@ public class DrawPanel extends JPanel {
 				
 				g2.setPaint(Color.BLACK);
 				g2.drawRect(stepSizeX*i, screenHeight - stepSizeY*(j+1), stepSizeX,stepSizeY);
+                                g2.drawString(String.valueOf(round(va.getExpectedValue(i, j),2)), stepSizeX*i, screenHeight - stepSizeY*(j));
 			}			
 		}
 		g2.drawString("Reward: \t\t"+mdp.getReward(), 30, screenHeight+25);
 		g2.drawString("#Actions: \t\t"+mdp.getActionsCounter(), 30, screenHeight+40);
 	}
+        
+            private double round(double value, int places) {
+            if (places < 0) throw new IllegalArgumentException();
+
+            BigDecimal bd = new BigDecimal(value);
+            bd = bd.setScale(places, RoundingMode.HALF_UP);
+            return bd.doubleValue();
+}
 
 }

@@ -59,6 +59,7 @@ public class MarkovDecisionProblem {
 	// Counts the number of actions that has been performed
 	private int actionsCounter = 0;
         private Double[][] rewardMatrix;
+        private ValueIterationAlgorithm va;
 	
 	/////////////////////////////////////////////////////////
 	/// FUNCTIONS
@@ -74,7 +75,8 @@ public class MarkovDecisionProblem {
 		
 		width = 4;
 		height = 3;
-		
+		va = new ValueIterationAlgorithm(this);
+
 		// Make and fill the fields:
 		landscape = new Field[width][height];
 		for (int i = 0; i < height; i++)
@@ -100,9 +102,11 @@ public class MarkovDecisionProblem {
 	 */
 	public MarkovDecisionProblem(int width, int height) {
 		defaultSettings();
-		
+
 		this.width = width;
 		this.height = height;
+                va = new ValueIterationAlgorithm(this);
+
 		
 		// Make and fill the fields:
 		landscape = new Field[this.width][this.height];
@@ -118,7 +122,10 @@ public class MarkovDecisionProblem {
                 
                 
                 initRewardMatrix();
+                
+
 		pDrawMDP();
+
 	}
 	
 	/**
@@ -149,6 +156,11 @@ public class MarkovDecisionProblem {
 		
 		actionsCounter = 0;
 	}
+        
+        public void valueIteration(){
+            va.valueIteration();
+            va.ApplyPolicy();
+        }
 	
 	/**
 	 * Performs the given action and returns the reward that action yielded.
@@ -494,7 +506,7 @@ public class MarkovDecisionProblem {
 		
 		// (2) repaint
 		if ( frame == null ) {
-			frame = new DrawFrame(this);
+			frame = new DrawFrame(this, va);
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setVisible(true);
 		} else { 
@@ -523,26 +535,30 @@ public class MarkovDecisionProblem {
 		showProgress = show;
 	}
 
-    private void initRewardMatrix() {
-    rewardMatrix = new Double[width][height];
-                for (int i = 0; i < width; i++){
-			for (int j = 0; j < height; j++){
-                            switch (this.getField(i, j)){
-                                case REWARD: rewardMatrix[i][j] = posReward;
-                                break;
-                                case NEGREWARD: rewardMatrix[i][j] = negReward;
-                                break;
-                                case EMPTY: rewardMatrix[i][j] = noReward;
-                                break;
-                                case OBSTACLE: rewardMatrix[i][j] = 0.0;
+        
+        /**
+         * initilalizes reward matrix with previously determined values.
+         */
+        private void initRewardMatrix() {
+        rewardMatrix = new Double[width][height];
+                    for (int i = 0; i < width; i++){
+                            for (int j = 0; j < height; j++){
+                                switch (this.getField(i, j)){
+                                    case REWARD: rewardMatrix[i][j] = posReward;
+                                    break;
+                                    case NEGREWARD: rewardMatrix[i][j] = negReward;
+                                    break;
+                                    case EMPTY: rewardMatrix[i][j] = noReward;
+                                    break;
+                                    case OBSTACLE: rewardMatrix[i][j] = 0.0;
+                                }
                             }
-                        }
-                }    
-    }
-    
-    public Double getReward(int x, int y){
-        return rewardMatrix[x][y];
-    }
+                    }    
+        }
+
+        public Double getReward(int x, int y){
+            return rewardMatrix[x][y];
+        }
 	
         
 }

@@ -25,13 +25,20 @@ public class ValueIterationAlgorithm {
     Double sigma = 0.0000001;
     int counter = 0;
     private int maxIterations = 10000;
+        Double[][] stateUtilities;
 
     private Action[][] policy;
 
-    public ValueIterationAlgorithm() {
-        mdp = new MarkovDecisionProblem(10, 20);
+    public ValueIterationAlgorithm(MarkovDecisionProblem m) {
+        mdp = m;
         mdp.setInitialState(0, 0);
         policy = new Action[mdp.getWidth()][mdp.getHeight()];
+        stateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
+        for (int x = 0; x < mdp.getWidth(); x++) {
+                for (int y = 0; y < mdp.getHeight(); y++) {
+                    stateUtilities[x][y] = 0.0;
+                }
+        }
 
     }
 
@@ -40,7 +47,6 @@ public class ValueIterationAlgorithm {
      */
     public void valueIteration() {
         Map<Action, Double> utils;
-        Double[][] stateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
         Double[][] oldStateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
         initStateUtility(oldStateUtilities);
         Boolean done = false;
@@ -220,6 +226,10 @@ public class ValueIterationAlgorithm {
 
     public Action getPolicy(int x, int y) {
         return policy[x][y];
+    }
+    
+    public double getExpectedValue(int x, int y){
+        return stateUtilities[x][y] == null ? 0.0 : stateUtilities[x][y];
     }
 
     /**

@@ -14,12 +14,14 @@ public class DrawFrame extends JFrame {
 	private int width = 750;
 	private int height = 800;
 	private MarkovDecisionProblem mdp;
+        private ValueIterationAlgorithm va;
 
 	/**
 	 * Constructor.
 	 * @param mdp
 	 */
-	public DrawFrame(MarkovDecisionProblem mdp) {
+	public DrawFrame(MarkovDecisionProblem mdp, ValueIterationAlgorithm va) {
+                this.va = va;
 		this.mdp = mdp;
 		width = mdp.getWidth() * 50;
 		height = mdp.getHeight() * 50;
@@ -33,7 +35,7 @@ public class DrawFrame extends JFrame {
 	 * Adds the content to the frame:
 	 */
 	public void drawContent() {
-		DrawPanel panel = new DrawPanel(mdp, width, height);
+		DrawPanel panel = new DrawPanel(mdp,va, width, height);
 		Container contentPane = getContentPane();
 		contentPane.add(panel);		
 	}
