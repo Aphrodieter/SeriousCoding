@@ -34,11 +34,6 @@ public class ValueIterationAlgorithm {
         mdp.setInitialState(0, 0);
         policy = new Action[mdp.getWidth()][mdp.getHeight()];
         stateUtilities = new Double[mdp.getWidth()][mdp.getHeight()];
-        for (int x = 0; x < mdp.getWidth(); x++) {
-                for (int y = 0; y < mdp.getHeight(); y++) {
-                    stateUtilities[x][y] = 0.0;
-                }
-        }
 
     }
 
