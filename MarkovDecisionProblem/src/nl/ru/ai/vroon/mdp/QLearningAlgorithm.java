@@ -18,11 +18,15 @@ public class QLearningAlgorithm {
     MarkovDecisionProblem mdp;
     double[][][] QValues;
     int counter = 0;
-    private int maxIterations = 5;
+    private int maxIterations = 10000;
     private Random rnd;
     
     double discount = 0.9;
-    Double alpha = 0.2;
+    double alpha = 0.2;
+    
+    double eps = 1.0;
+    double eps_min = 0.01;
+    double decay = 0.005;
 
     public QLearningAlgorithm(MarkovDecisionProblem m) {
         mdp = m;
@@ -34,50 +38,39 @@ public class QLearningAlgorithm {
         initializeQTable();
         
         for (int iter = 0; iter < maxIterations; iter++){
+            
             int x = mdp.getStateXPosition();
             int y = mdp.getStateYPostion();
             while (mdp.getField(x, y) != Field.REWARD){
-                System.out.println(counter);
-
-
+                try
+                {Thread.sleep(0);}
+                catch (Exception e)
+                {e.printStackTrace();}
+                
+                
+                
+                
+                
                 int a = bestAction(x,y);
                 double expFutValue = actionValue(a);
-                QValues[x][y][a] = QValues[x][y][a] + alpha*(expFutValue - QValues[x][y][a]);
+                double q = QValues[x][y][a];
+                QValues[x][y][a] = q + alpha*(expFutValue - q);
 
                 x = mdp.getStateXPosition();
                 y = mdp.getStateYPostion();
 
-
-
-
-
+                eps += -decay;
+                if (eps < eps_min)
+                    eps = eps_min;
             }
-            mdp.restart();
-            counter++;
-  
-            
+            mdp.restart(); 
         }
         
         printTable();
-        while (true){
-            int bestAction = 0;
-            double bestValue = -9999999;
-            for (int a = 0; a < QValues[0][0].length; a++){
-                if (QValues[mdp.getStateXPosition()][mdp.getStateYPostion()][a] > bestValue)
-                    bestValue = QValues[mdp.getStateXPosition()][mdp.getStateYPostion()][a];
-                    bestAction = a;
-            }
-            switch (bestAction){
-                case 0: mdp.performAction(Action.UP);
-                break;
-                case 1: mdp.performAction(Action.RIGHT);
-                break;
-                case 2: mdp.performAction(Action.DOWN);
-                break;
-                case 3: mdp.performAction(Action.LEFT);
-                break;
-            }
-        }
+        
+        mdp.setShowProgress(true);
+        mdp.setWaittime(500);
+        applyPolicy();
         
         
         
@@ -94,27 +87,33 @@ public class QLearningAlgorithm {
 
     }
 
-    private Double getBestActionVal(int x, int y) {
-
-        return null;
-    }
+   
 
     private int bestAction(int x, int y) {
+        float exploitation = rnd.nextFloat();
+
         int[] possibleActions = getPossibleActions(x,y);
+        int k = 0;
+
+        if (exploitation > eps){ //exploitation{
         
         //best action
-//        int k = 0;
-//        double bestValue = -999999999999.0;
-//        for (int a : possibleActions){
-//            if (QValues[x][y][a] > bestValue){
-//                bestValue = QValues[x][y][a];
-//                k = a;
-//            }
-//        }
+        double bestValue = -999999999999.0;
+        for (int a : possibleActions){
+            if (QValues[x][y][a] > bestValue){
+                bestValue = QValues[x][y][a];
+                k = a;
+            }
+        }
+        return k;
+    }
+        else { //exploration
+            k = rnd.nextInt(possibleActions.length);
+            return possibleActions[k];
+        }
         
         //random action
-        int k = rnd.nextInt(possibleActions.length);
-        return k;
+        //possibleActions[k];
     }
 
     private double actionValue(int a) {
@@ -132,7 +131,8 @@ public class QLearningAlgorithm {
         int newX = mdp.getStateXPosition();
         int newY = mdp.getStateYPostion();
         
-        double maxAction = Arrays.stream(QValues[newX][newY]).max().getAsDouble();
+        double maxAction = Arrays.stream(QValues[newX][newY]).max().getAsDouble();//getBestFutureAction(newX, newY);
+        //System.out.println("x: " + newX + " y: " + newY + " value: " + maxAction);
         
         return reward + discount*maxAction;
     }
@@ -166,5 +166,44 @@ public class QLearningAlgorithm {
             case 3: return x-1 >= 0 && mdp.getField(x-1, y) != Field.OBSTACLE;
         }
         return true;
+    }
+
+    private double getBestFutureAction(int x, int y) {
+        double[] actionValues = new double[4];
+        actionValues[0] = QValues[x][y][0] * mdp.getpPerform() + QValues[x][y][1] * mdp.getPSideStep()/2 + QValues[x][y][2] * mdp.getpBackstep() + QValues[x][y][3] * mdp.getPSideStep()/2;
+        actionValues[1] = QValues[x][y][1] * mdp.getpPerform() + QValues[x][y][0] * mdp.getPSideStep()/2 + QValues[x][y][2] * mdp.getPSideStep()/2 + QValues[x][y][3] * mdp.getpBackstep();
+        actionValues[2] = QValues[x][y][2] * mdp.getpPerform() + QValues[x][y][1] * mdp.getPSideStep()/2 + QValues[x][y][3] * mdp.getPSideStep()/2 + QValues[x][y][0] * mdp.getpBackstep();
+        actionValues[3] = QValues[x][y][3] * mdp.getpPerform() + QValues[x][y][0] * mdp.getPSideStep()/2 + QValues[x][y][2] * mdp.getPSideStep()/2 + QValues[x][y][1] * mdp.getpBackstep();
+        
+        return Arrays.stream(actionValues).max().getAsDouble();
+    }
+
+    private void applyPolicy() {
+        int x = mdp.getStateXPosition();
+        int y = mdp.getStateYPostion();
+        while (mdp.getField(x, y) != Field.REWARD && mdp.getField(x, y) != Field.NEGREWARD){
+            int bestAction = 0;
+            double bestValue = -9999999;
+            int[] possibleActions = getPossibleActions(x,y);
+            for (int a : possibleActions){
+                if (QValues[x][y][a] > bestValue){
+                    bestValue = QValues[x][y][a];
+                    bestAction = a;
+                }
+            }
+            switch (bestAction){
+                case 0: mdp.performAction(Action.UP);
+                break;
+                case 1: mdp.performAction(Action.RIGHT);
+                break;
+                case 2: mdp.performAction(Action.DOWN);
+                break;
+                case 3: mdp.performAction(Action.LEFT);
+                break;
+            }
+            
+            x = mdp.getStateXPosition();
+            y = mdp.getStateYPostion();
+        }
     }
 }

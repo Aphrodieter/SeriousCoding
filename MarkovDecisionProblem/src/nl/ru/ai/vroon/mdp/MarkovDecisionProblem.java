@@ -53,7 +53,7 @@ public class MarkovDecisionProblem {
 	// The DrawFrame this MDP uses to draw itself
 	private DrawFrame frame = null;
 	// The time that is waited between drawing each action performed:
-	private int waittime = 500;
+	private int waittime = 2;
 	private boolean showProgress = true;
 	
 	// Counts the number of actions that has been performed
@@ -120,9 +120,9 @@ public class MarkovDecisionProblem {
                 
                 setField(1,1,Field.OBSTACLE);
 		setField(5,0,Field.NEGREWARD);
-                setField(3,14,Field.NEGREWARD);
-                setField(4,13,Field.NEGREWARD);
-		setField(7,15,Field.REWARD);
+                setField(3,4,Field.NEGREWARD);
+                setField(4,7,Field.NEGREWARD);
+		setField(9,9,Field.REWARD);
                 
                 
                 initRewardMatrix();
@@ -151,12 +151,12 @@ public class MarkovDecisionProblem {
 
 		posReward = 1;
 		negReward = -1;	
-		noReward = -0.0;
+		noReward = -0.04;
 
 		terminated = false;
 		
-		waittime = 500;
-		showProgress = true;
+		waittime = 2;
+		showProgress = false;
 		
 		actionsCounter = 0;
 	}

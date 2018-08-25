@@ -231,6 +231,8 @@ public class ValueIterationAlgorithm {
      * the agent performs the moves following the computed policy.
      */
     public void ApplyPolicy() {
+        mdp.setShowProgress(true);
+        mdp.setWaittime(500);
         int xPos = 0;
         int yPos = 0;
         while (true) {
