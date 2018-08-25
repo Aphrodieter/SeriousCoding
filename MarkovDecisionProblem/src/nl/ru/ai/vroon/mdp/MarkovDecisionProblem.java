@@ -60,6 +60,7 @@ public class MarkovDecisionProblem {
 	private int actionsCounter = 0;
         private Double[][] rewardMatrix;
         private ValueIterationAlgorithm va;
+        private QLearningAlgorithm ql;
 	
 	/////////////////////////////////////////////////////////
 	/// FUNCTIONS
@@ -76,6 +77,7 @@ public class MarkovDecisionProblem {
 		width = 4;
 		height = 3;
 		va = new ValueIterationAlgorithm(this);
+                ql = new QLearningAlgorithm(this);
 
 		// Make and fill the fields:
 		landscape = new Field[width][height];
@@ -106,6 +108,8 @@ public class MarkovDecisionProblem {
 		this.width = width;
 		this.height = height;
                 va = new ValueIterationAlgorithm(this);
+                ql = new QLearningAlgorithm(this);
+
 
 		
 		// Make and fill the fields:
@@ -147,7 +151,7 @@ public class MarkovDecisionProblem {
 
 		posReward = 1;
 		negReward = -1;	
-		noReward = -0.04;
+		noReward = -0.0;
 
 		terminated = false;
 		
@@ -160,6 +164,10 @@ public class MarkovDecisionProblem {
         public void valueIteration(){
             va.valueIteration();
             va.ApplyPolicy();
+        }
+        
+        public void qLearning(){
+            ql.QLearning();
         }
 	
 	/**

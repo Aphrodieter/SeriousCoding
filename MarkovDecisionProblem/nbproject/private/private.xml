@@ -10,5 +10,16 @@
             <file>file:/Users/christianlammers/Desktop/Persönlich/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/Action.java</file>
             <file>file:/Users/christianlammers/Desktop/Persönlich/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/ValueIterationAlgorithm.java</file>
         </group>
+        <group>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/MarkovDecisionProblem.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/Action.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/QLearningAlgorithm.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/DrawPanel.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/DrawFrame.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/Main.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/ValueIterationAlgorithm.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/Field.java</file>
+            <file>file:/C:/Users/CLEMENS/Documents/SeriousCoding/MarkovDecisionProblem/src/nl/ru/ai/vroon/mdp/Tuple.java</file>
+        </group>
     </open-files>
 </project-private>

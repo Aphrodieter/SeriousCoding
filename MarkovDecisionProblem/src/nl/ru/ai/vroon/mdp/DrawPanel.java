@@ -20,6 +20,8 @@ public class DrawPanel extends JPanel {
 	private int screenHeight;
 	private MarkovDecisionProblem mdp;
         private ValueIterationAlgorithm va;
+        private QLearningAlgorithm ql;
+        private boolean valueIteration;
 	
 	/**
 	 * Constructor
@@ -31,8 +33,18 @@ public class DrawPanel extends JPanel {
 		this.mdp = mdp;
                 this.va = va;
 		this.screenWidth = screenWidth;
-		this.screenHeight = screenHeight;		
+		this.screenHeight = screenHeight;
+                this.valueIteration = true;
+                
 	}
+        public DrawPanel(MarkovDecisionProblem mdp,QLearningAlgorithm ql, int screenWidth, int screenHeight) {
+		this.mdp = mdp;
+                this.ql = ql;
+		this.screenWidth = screenWidth;
+		this.screenHeight = screenHeight;	
+                this.valueIteration = false;
+	}
+        
 	
 	@Override
 	public void paintComponent(Graphics g) {
@@ -65,7 +77,9 @@ public class DrawPanel extends JPanel {
 				
 				g2.setPaint(Color.BLACK);
 				g2.drawRect(stepSizeX*i, screenHeight - stepSizeY*(j+1), stepSizeX,stepSizeY);
+                                if(valueIteration)
                                 g2.drawString(String.valueOf(round(va.getExpectedValue(i, j),2)), stepSizeX*i +12, screenHeight - stepSizeY*(j) -12);
+                                
 			}			
 		}
 		g2.drawString("Reward: \t\t"+mdp.getReward(), 30, screenHeight+25);
