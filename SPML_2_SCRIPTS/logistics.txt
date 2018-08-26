@@ -1,0 +1,1977 @@
+
+2018-08-26 13:28:48,531 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:48,531 INFO     using search: astar_search
+2018-08-26 13:28:48,531 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:28:48,531 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:48,537 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:48,538 INFO     3 Predicates parsed
+2018-08-26 13:28:48,538 INFO     6 Actions parsed
+2018-08-26 13:28:48,538 INFO     15 Objects parsed
+2018-08-26 13:28:48,538 INFO     0 Constants parsed
+2018-08-26 13:28:48,539 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:48,544 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:48,544 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:48,544 INFO     54 Variables created
+2018-08-26 13:28:48,544 INFO     106 Operators created
+2018-08-26 13:28:48,545 INFO     Search start: logistics-4-0
+2018-08-26 13:28:48,545 INFO     Initial h value: 1.000000
+2018-08-26 13:28:49,419 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:28:49,419 INFO     11088 Nodes expanded
+2018-08-26 13:28:49,424 INFO     Search end: logistics-4-0
+2018-08-26 13:28:49,424 INFO     Wall-clock search time: 0.88
+2018-08-26 13:28:49,424 INFO     Plan length: 20
+2018-08-26 13:28:49,440 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:28:49,546 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:49,547 INFO     using search: weighted_astar_search
+2018-08-26 13:28:49,547 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:28:49,547 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:49,550 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:49,552 INFO     3 Predicates parsed
+2018-08-26 13:28:49,552 INFO     6 Actions parsed
+2018-08-26 13:28:49,552 INFO     15 Objects parsed
+2018-08-26 13:28:49,552 INFO     0 Constants parsed
+2018-08-26 13:28:49,552 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:49,556 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:49,557 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:49,557 INFO     54 Variables created
+2018-08-26 13:28:49,557 INFO     106 Operators created
+2018-08-26 13:28:49,557 INFO     Search start: logistics-4-0
+2018-08-26 13:28:49,557 INFO     Initial h value: 1.000000
+2018-08-26 13:28:50,436 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:28:50,436 INFO     11088 Nodes expanded
+2018-08-26 13:28:50,440 INFO     Search end: logistics-4-0
+2018-08-26 13:28:50,440 INFO     Wall-clock search time: 0.88
+2018-08-26 13:28:50,440 INFO     Plan length: 20
+2018-08-26 13:28:50,457 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:28:50,561 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:50,561 INFO     using search: astar_search
+2018-08-26 13:28:50,561 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:28:50,561 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:50,565 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:50,566 INFO     3 Predicates parsed
+2018-08-26 13:28:50,566 INFO     6 Actions parsed
+2018-08-26 13:28:50,566 INFO     15 Objects parsed
+2018-08-26 13:28:50,566 INFO     0 Constants parsed
+2018-08-26 13:28:50,566 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:50,571 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:50,571 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:50,571 INFO     54 Variables created
+2018-08-26 13:28:50,571 INFO     106 Operators created
+2018-08-26 13:28:50,572 INFO     Search start: logistics-4-0
+2018-08-26 13:28:50,572 INFO     Initial h value: 24.000000
+2018-08-26 13:28:50,619 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:28:50,619 INFO     21 Nodes expanded
+2018-08-26 13:28:50,619 INFO     Search end: logistics-4-0
+2018-08-26 13:28:50,619 INFO     Wall-clock search time: 0.047
+2018-08-26 13:28:50,619 INFO     Plan length: 20
+2018-08-26 13:28:50,635 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:28:50,745 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:50,745 INFO     using search: weighted_astar_search
+2018-08-26 13:28:50,745 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:28:50,746 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:50,748 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:50,749 INFO     3 Predicates parsed
+2018-08-26 13:28:50,749 INFO     6 Actions parsed
+2018-08-26 13:28:50,749 INFO     15 Objects parsed
+2018-08-26 13:28:50,750 INFO     0 Constants parsed
+2018-08-26 13:28:50,750 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:50,754 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:50,754 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:50,754 INFO     54 Variables created
+2018-08-26 13:28:50,754 INFO     106 Operators created
+2018-08-26 13:28:50,755 INFO     Search start: logistics-4-0
+2018-08-26 13:28:50,755 INFO     Initial h value: 24.000000
+2018-08-26 13:28:50,796 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:28:50,796 INFO     21 Nodes expanded
+2018-08-26 13:28:50,796 INFO     Search end: logistics-4-0
+2018-08-26 13:28:50,796 INFO     Wall-clock search time: 0.042
+2018-08-26 13:28:50,797 INFO     Plan length: 20
+2018-08-26 13:28:50,812 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:28:50,914 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:50,914 INFO     using search: astar_search
+2018-08-26 13:28:50,914 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:28:50,914 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:50,917 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:50,918 INFO     3 Predicates parsed
+2018-08-26 13:28:50,918 INFO     6 Actions parsed
+2018-08-26 13:28:50,918 INFO     15 Objects parsed
+2018-08-26 13:28:50,918 INFO     0 Constants parsed
+2018-08-26 13:28:50,918 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:50,923 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:50,923 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:50,923 INFO     54 Variables created
+2018-08-26 13:28:50,923 INFO     106 Operators created
+2018-08-26 13:28:50,924 INFO     Search start: logistics-4-0
+2018-08-26 13:28:50,924 INFO     Initial h value: 19.000000
+2018-08-26 13:28:51,094 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:28:51,094 INFO     77 Nodes expanded
+2018-08-26 13:28:51,094 INFO     Search end: logistics-4-0
+2018-08-26 13:28:51,094 INFO     Wall-clock search time: 0.17
+2018-08-26 13:28:51,094 INFO     Plan length: 20
+2018-08-26 13:28:51,110 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:28:51,215 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:51,216 INFO     using search: weighted_astar_search
+2018-08-26 13:28:51,216 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:28:51,216 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:51,218 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:51,220 INFO     3 Predicates parsed
+2018-08-26 13:28:51,220 INFO     6 Actions parsed
+2018-08-26 13:28:51,220 INFO     15 Objects parsed
+2018-08-26 13:28:51,220 INFO     0 Constants parsed
+2018-08-26 13:28:51,220 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:51,224 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:51,225 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:51,225 INFO     54 Variables created
+2018-08-26 13:28:51,225 INFO     106 Operators created
+2018-08-26 13:28:51,225 INFO     Search start: logistics-4-0
+2018-08-26 13:28:51,225 INFO     Initial h value: 19.000000
+2018-08-26 13:28:51,267 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:28:51,267 INFO     22 Nodes expanded
+2018-08-26 13:28:51,268 INFO     Search end: logistics-4-0
+2018-08-26 13:28:51,268 INFO     Wall-clock search time: 0.043
+2018-08-26 13:28:51,268 INFO     Plan length: 20
+2018-08-26 13:28:51,283 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:28:51,395 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:51,396 INFO     using search: astar_search
+2018-08-26 13:28:51,396 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:28:51,396 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:28:51,399 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:28:51,400 INFO     3 Predicates parsed
+2018-08-26 13:28:51,400 INFO     6 Actions parsed
+2018-08-26 13:28:51,400 INFO     15 Objects parsed
+2018-08-26 13:28:51,400 INFO     0 Constants parsed
+2018-08-26 13:28:51,400 INFO     Grounding start: logistics-4-0
+2018-08-26 13:28:51,404 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:28:51,405 INFO     Grounding end: logistics-4-0
+2018-08-26 13:28:51,405 INFO     54 Variables created
+2018-08-26 13:28:51,405 INFO     106 Operators created
+2018-08-26 13:28:51,405 INFO     Search start: logistics-4-0
+2018-08-26 13:28:51,406 INFO     Initial h value: 6.000000
+2018-08-26 13:29:02,307 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:02,308 INFO     4886 Nodes expanded
+2018-08-26 13:29:02,311 INFO     Search end: logistics-4-0
+2018-08-26 13:29:02,311 INFO     Wall-clock search time: 1.1e+01
+2018-08-26 13:29:02,311 INFO     Plan length: 20
+2018-08-26 13:29:02,327 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:02,433 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:02,433 INFO     using search: weighted_astar_search
+2018-08-26 13:29:02,433 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:02,434 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:02,436 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl
+2018-08-26 13:29:02,437 INFO     3 Predicates parsed
+2018-08-26 13:29:02,437 INFO     6 Actions parsed
+2018-08-26 13:29:02,437 INFO     15 Objects parsed
+2018-08-26 13:29:02,438 INFO     0 Constants parsed
+2018-08-26 13:29:02,438 INFO     Grounding start: logistics-4-0
+2018-08-26 13:29:02,442 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:02,443 INFO     Grounding end: logistics-4-0
+2018-08-26 13:29:02,443 INFO     54 Variables created
+2018-08-26 13:29:02,443 INFO     106 Operators created
+2018-08-26 13:29:02,443 INFO     Search start: logistics-4-0
+2018-08-26 13:29:02,444 INFO     Initial h value: 6.000000
+2018-08-26 13:29:02,743 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:02,743 INFO     141 Nodes expanded
+2018-08-26 13:29:02,743 INFO     Search end: logistics-4-0
+2018-08-26 13:29:02,743 INFO     Wall-clock search time: 0.3
+2018-08-26 13:29:02,743 INFO     Plan length: 20
+2018-08-26 13:29:02,759 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:02,868 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:02,868 INFO     using search: astar_search
+2018-08-26 13:29:02,868 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:02,869 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:02,871 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:02,982 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:02,983 INFO     using search: weighted_astar_search
+2018-08-26 13:29:02,983 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:02,983 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:02,986 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,099 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,099 INFO     using search: astar_search
+2018-08-26 13:29:03,099 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:03,099 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,102 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,213 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,214 INFO     using search: weighted_astar_search
+2018-08-26 13:29:03,214 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:03,214 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,217 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,337 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,338 INFO     using search: astar_search
+2018-08-26 13:29:03,338 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:03,338 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,342 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,453 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,453 INFO     using search: weighted_astar_search
+2018-08-26 13:29:03,453 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:03,453 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,456 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,572 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,572 INFO     using search: astar_search
+2018-08-26 13:29:03,572 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:03,572 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,575 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,685 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,686 INFO     using search: weighted_astar_search
+2018-08-26 13:29:03,686 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:03,686 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,689 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task01.pddl.soln
+2018-08-26 13:29:03,800 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,800 INFO     using search: astar_search
+2018-08-26 13:29:03,800 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:03,800 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:03,803 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:03,804 INFO     3 Predicates parsed
+2018-08-26 13:29:03,804 INFO     6 Actions parsed
+2018-08-26 13:29:03,804 INFO     15 Objects parsed
+2018-08-26 13:29:03,804 INFO     0 Constants parsed
+2018-08-26 13:29:03,804 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:03,809 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:03,809 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:03,809 INFO     54 Variables created
+2018-08-26 13:29:03,809 INFO     106 Operators created
+2018-08-26 13:29:03,809 INFO     Search start: logistics-4-1
+2018-08-26 13:29:03,809 INFO     Initial h value: 1.000000
+2018-08-26 13:29:04,580 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:04,593 INFO     9612 Nodes expanded
+2018-08-26 13:29:04,599 INFO     Search end: logistics-4-1
+2018-08-26 13:29:04,599 INFO     Wall-clock search time: 0.78
+2018-08-26 13:29:04,599 INFO     Plan length: 19
+2018-08-26 13:29:04,605 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:04,717 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:04,717 INFO     using search: weighted_astar_search
+2018-08-26 13:29:04,717 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:04,717 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:04,720 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:04,721 INFO     3 Predicates parsed
+2018-08-26 13:29:04,721 INFO     6 Actions parsed
+2018-08-26 13:29:04,721 INFO     15 Objects parsed
+2018-08-26 13:29:04,721 INFO     0 Constants parsed
+2018-08-26 13:29:04,721 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:04,726 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:04,726 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:04,726 INFO     54 Variables created
+2018-08-26 13:29:04,726 INFO     106 Operators created
+2018-08-26 13:29:04,726 INFO     Search start: logistics-4-1
+2018-08-26 13:29:04,726 INFO     Initial h value: 1.000000
+2018-08-26 13:29:05,458 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:05,459 INFO     9612 Nodes expanded
+2018-08-26 13:29:05,462 INFO     Search end: logistics-4-1
+2018-08-26 13:29:05,462 INFO     Wall-clock search time: 0.74
+2018-08-26 13:29:05,462 INFO     Plan length: 19
+2018-08-26 13:29:05,478 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:05,581 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:05,582 INFO     using search: astar_search
+2018-08-26 13:29:05,582 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:05,582 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:05,585 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:05,586 INFO     3 Predicates parsed
+2018-08-26 13:29:05,586 INFO     6 Actions parsed
+2018-08-26 13:29:05,586 INFO     15 Objects parsed
+2018-08-26 13:29:05,586 INFO     0 Constants parsed
+2018-08-26 13:29:05,586 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:05,590 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:05,591 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:05,591 INFO     54 Variables created
+2018-08-26 13:29:05,591 INFO     106 Operators created
+2018-08-26 13:29:05,591 INFO     Search start: logistics-4-1
+2018-08-26 13:29:05,592 INFO     Initial h value: 21.000000
+2018-08-26 13:29:05,660 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:05,661 INFO     39 Nodes expanded
+2018-08-26 13:29:05,661 INFO     Search end: logistics-4-1
+2018-08-26 13:29:05,661 INFO     Wall-clock search time: 0.069
+2018-08-26 13:29:05,661 INFO     Plan length: 21
+2018-08-26 13:29:05,676 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:05,777 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:05,777 INFO     using search: weighted_astar_search
+2018-08-26 13:29:05,777 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:05,777 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:05,780 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:05,781 INFO     3 Predicates parsed
+2018-08-26 13:29:05,781 INFO     6 Actions parsed
+2018-08-26 13:29:05,781 INFO     15 Objects parsed
+2018-08-26 13:29:05,781 INFO     0 Constants parsed
+2018-08-26 13:29:05,781 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:05,786 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:05,786 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:05,786 INFO     54 Variables created
+2018-08-26 13:29:05,786 INFO     106 Operators created
+2018-08-26 13:29:05,787 INFO     Search start: logistics-4-1
+2018-08-26 13:29:05,787 INFO     Initial h value: 21.000000
+2018-08-26 13:29:05,833 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:05,833 INFO     24 Nodes expanded
+2018-08-26 13:29:05,834 INFO     Search end: logistics-4-1
+2018-08-26 13:29:05,834 INFO     Wall-clock search time: 0.047
+2018-08-26 13:29:05,834 INFO     Plan length: 21
+2018-08-26 13:29:05,849 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:05,947 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:05,948 INFO     using search: astar_search
+2018-08-26 13:29:05,948 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:05,948 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:05,951 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:05,952 INFO     3 Predicates parsed
+2018-08-26 13:29:05,952 INFO     6 Actions parsed
+2018-08-26 13:29:05,952 INFO     15 Objects parsed
+2018-08-26 13:29:05,952 INFO     0 Constants parsed
+2018-08-26 13:29:05,952 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:05,956 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:05,957 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:05,957 INFO     54 Variables created
+2018-08-26 13:29:05,957 INFO     106 Operators created
+2018-08-26 13:29:05,957 INFO     Search start: logistics-4-1
+2018-08-26 13:29:05,958 INFO     Initial h value: 17.000000
+2018-08-26 13:29:06,377 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:06,377 INFO     194 Nodes expanded
+2018-08-26 13:29:06,377 INFO     Search end: logistics-4-1
+2018-08-26 13:29:06,377 INFO     Wall-clock search time: 0.42
+2018-08-26 13:29:06,378 INFO     Plan length: 19
+2018-08-26 13:29:06,393 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:06,496 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:06,496 INFO     using search: weighted_astar_search
+2018-08-26 13:29:06,497 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:06,497 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:06,500 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:06,501 INFO     3 Predicates parsed
+2018-08-26 13:29:06,501 INFO     6 Actions parsed
+2018-08-26 13:29:06,501 INFO     15 Objects parsed
+2018-08-26 13:29:06,501 INFO     0 Constants parsed
+2018-08-26 13:29:06,501 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:06,506 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:06,506 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:06,506 INFO     54 Variables created
+2018-08-26 13:29:06,506 INFO     106 Operators created
+2018-08-26 13:29:06,506 INFO     Search start: logistics-4-1
+2018-08-26 13:29:06,507 INFO     Initial h value: 17.000000
+2018-08-26 13:29:06,553 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:06,553 INFO     22 Nodes expanded
+2018-08-26 13:29:06,553 INFO     Search end: logistics-4-1
+2018-08-26 13:29:06,553 INFO     Wall-clock search time: 0.047
+2018-08-26 13:29:06,553 INFO     Plan length: 19
+2018-08-26 13:29:06,568 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:06,676 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:06,677 INFO     using search: astar_search
+2018-08-26 13:29:06,677 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:06,677 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:06,680 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:06,681 INFO     3 Predicates parsed
+2018-08-26 13:29:06,681 INFO     6 Actions parsed
+2018-08-26 13:29:06,681 INFO     15 Objects parsed
+2018-08-26 13:29:06,681 INFO     0 Constants parsed
+2018-08-26 13:29:06,681 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:06,686 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:06,686 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:06,686 INFO     54 Variables created
+2018-08-26 13:29:06,686 INFO     106 Operators created
+2018-08-26 13:29:06,687 INFO     Search start: logistics-4-1
+2018-08-26 13:29:06,687 INFO     Initial h value: 6.000000
+2018-08-26 13:29:14,605 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:14,605 INFO     4187 Nodes expanded
+2018-08-26 13:29:14,607 INFO     Search end: logistics-4-1
+2018-08-26 13:29:14,607 INFO     Wall-clock search time: 7.9
+2018-08-26 13:29:14,608 INFO     Plan length: 19
+2018-08-26 13:29:14,623 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:14,725 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:14,725 INFO     using search: weighted_astar_search
+2018-08-26 13:29:14,725 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:14,725 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:14,728 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl
+2018-08-26 13:29:14,729 INFO     3 Predicates parsed
+2018-08-26 13:29:14,729 INFO     6 Actions parsed
+2018-08-26 13:29:14,729 INFO     15 Objects parsed
+2018-08-26 13:29:14,729 INFO     0 Constants parsed
+2018-08-26 13:29:14,729 INFO     Grounding start: logistics-4-1
+2018-08-26 13:29:14,734 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:14,734 INFO     Grounding end: logistics-4-1
+2018-08-26 13:29:14,734 INFO     54 Variables created
+2018-08-26 13:29:14,734 INFO     106 Operators created
+2018-08-26 13:29:14,734 INFO     Search start: logistics-4-1
+2018-08-26 13:29:14,735 INFO     Initial h value: 6.000000
+2018-08-26 13:29:15,218 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:15,218 INFO     294 Nodes expanded
+2018-08-26 13:29:15,218 INFO     Search end: logistics-4-1
+2018-08-26 13:29:15,218 INFO     Wall-clock search time: 0.48
+2018-08-26 13:29:15,218 INFO     Plan length: 23
+2018-08-26 13:29:15,234 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:15,334 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,334 INFO     using search: astar_search
+2018-08-26 13:29:15,335 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:15,335 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,337 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:15,449 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,449 INFO     using search: weighted_astar_search
+2018-08-26 13:29:15,449 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:15,449 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,452 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:15,565 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,566 INFO     using search: astar_search
+2018-08-26 13:29:15,566 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:15,566 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,569 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:15,688 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,688 INFO     using search: weighted_astar_search
+2018-08-26 13:29:15,688 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:15,689 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,694 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:15,796 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,796 INFO     using search: astar_search
+2018-08-26 13:29:15,796 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:15,796 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,799 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:15,911 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,911 INFO     using search: weighted_astar_search
+2018-08-26 13:29:15,911 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:15,911 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:15,914 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:16,026 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,026 INFO     using search: astar_search
+2018-08-26 13:29:16,026 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:16,026 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,029 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:16,144 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,145 INFO     using search: weighted_astar_search
+2018-08-26 13:29:16,145 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:16,145 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,148 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task02.pddl.soln
+2018-08-26 13:29:16,258 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,258 INFO     using search: astar_search
+2018-08-26 13:29:16,258 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:16,259 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,261 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:16,262 INFO     3 Predicates parsed
+2018-08-26 13:29:16,262 INFO     6 Actions parsed
+2018-08-26 13:29:16,263 INFO     15 Objects parsed
+2018-08-26 13:29:16,263 INFO     0 Constants parsed
+2018-08-26 13:29:16,263 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:16,267 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:16,268 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:16,268 INFO     54 Variables created
+2018-08-26 13:29:16,268 INFO     106 Operators created
+2018-08-26 13:29:16,268 INFO     Search start: logistics-4-2
+2018-08-26 13:29:16,268 INFO     Initial h value: 1.000000
+2018-08-26 13:29:16,631 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:16,631 INFO     4719 Nodes expanded
+2018-08-26 13:29:16,633 INFO     Search end: logistics-4-2
+2018-08-26 13:29:16,634 INFO     Wall-clock search time: 0.37
+2018-08-26 13:29:16,634 INFO     Plan length: 15
+2018-08-26 13:29:16,649 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:16,754 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,754 INFO     using search: weighted_astar_search
+2018-08-26 13:29:16,754 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:16,755 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:16,757 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:16,758 INFO     3 Predicates parsed
+2018-08-26 13:29:16,758 INFO     6 Actions parsed
+2018-08-26 13:29:16,759 INFO     15 Objects parsed
+2018-08-26 13:29:16,759 INFO     0 Constants parsed
+2018-08-26 13:29:16,759 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:16,763 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:16,763 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:16,763 INFO     54 Variables created
+2018-08-26 13:29:16,763 INFO     106 Operators created
+2018-08-26 13:29:16,764 INFO     Search start: logistics-4-2
+2018-08-26 13:29:16,764 INFO     Initial h value: 1.000000
+2018-08-26 13:29:17,125 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:17,125 INFO     4728 Nodes expanded
+2018-08-26 13:29:17,127 INFO     Search end: logistics-4-2
+2018-08-26 13:29:17,127 INFO     Wall-clock search time: 0.36
+2018-08-26 13:29:17,127 INFO     Plan length: 15
+2018-08-26 13:29:17,141 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:17,249 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,249 INFO     using search: astar_search
+2018-08-26 13:29:17,250 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:17,250 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,252 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:17,253 INFO     3 Predicates parsed
+2018-08-26 13:29:17,254 INFO     6 Actions parsed
+2018-08-26 13:29:17,254 INFO     15 Objects parsed
+2018-08-26 13:29:17,254 INFO     0 Constants parsed
+2018-08-26 13:29:17,254 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:17,258 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:17,258 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:17,259 INFO     54 Variables created
+2018-08-26 13:29:17,259 INFO     106 Operators created
+2018-08-26 13:29:17,259 INFO     Search start: logistics-4-2
+2018-08-26 13:29:17,260 INFO     Initial h value: 15.000000
+2018-08-26 13:29:17,286 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:17,286 INFO     16 Nodes expanded
+2018-08-26 13:29:17,286 INFO     Search end: logistics-4-2
+2018-08-26 13:29:17,286 INFO     Wall-clock search time: 0.027
+2018-08-26 13:29:17,287 INFO     Plan length: 15
+2018-08-26 13:29:17,302 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:17,408 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,408 INFO     using search: weighted_astar_search
+2018-08-26 13:29:17,408 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:17,408 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,411 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:17,412 INFO     3 Predicates parsed
+2018-08-26 13:29:17,412 INFO     6 Actions parsed
+2018-08-26 13:29:17,412 INFO     15 Objects parsed
+2018-08-26 13:29:17,412 INFO     0 Constants parsed
+2018-08-26 13:29:17,412 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:17,417 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:17,417 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:17,417 INFO     54 Variables created
+2018-08-26 13:29:17,417 INFO     106 Operators created
+2018-08-26 13:29:17,417 INFO     Search start: logistics-4-2
+2018-08-26 13:29:17,418 INFO     Initial h value: 15.000000
+2018-08-26 13:29:17,439 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:17,439 INFO     16 Nodes expanded
+2018-08-26 13:29:17,439 INFO     Search end: logistics-4-2
+2018-08-26 13:29:17,439 INFO     Wall-clock search time: 0.022
+2018-08-26 13:29:17,439 INFO     Plan length: 15
+2018-08-26 13:29:17,455 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:17,559 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,559 INFO     using search: astar_search
+2018-08-26 13:29:17,559 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:17,559 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,562 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:17,563 INFO     3 Predicates parsed
+2018-08-26 13:29:17,563 INFO     6 Actions parsed
+2018-08-26 13:29:17,563 INFO     15 Objects parsed
+2018-08-26 13:29:17,563 INFO     0 Constants parsed
+2018-08-26 13:29:17,563 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:17,568 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:17,568 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:17,568 INFO     54 Variables created
+2018-08-26 13:29:17,569 INFO     106 Operators created
+2018-08-26 13:29:17,569 INFO     Search start: logistics-4-2
+2018-08-26 13:29:17,569 INFO     Initial h value: 13.000000
+2018-08-26 13:29:17,658 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:17,658 INFO     53 Nodes expanded
+2018-08-26 13:29:17,658 INFO     Search end: logistics-4-2
+2018-08-26 13:29:17,658 INFO     Wall-clock search time: 0.089
+2018-08-26 13:29:17,658 INFO     Plan length: 15
+2018-08-26 13:29:17,673 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:17,781 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,781 INFO     using search: weighted_astar_search
+2018-08-26 13:29:17,782 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:17,782 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,784 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:17,785 INFO     3 Predicates parsed
+2018-08-26 13:29:17,786 INFO     6 Actions parsed
+2018-08-26 13:29:17,786 INFO     15 Objects parsed
+2018-08-26 13:29:17,786 INFO     0 Constants parsed
+2018-08-26 13:29:17,786 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:17,790 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:17,791 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:17,791 INFO     54 Variables created
+2018-08-26 13:29:17,791 INFO     106 Operators created
+2018-08-26 13:29:17,791 INFO     Search start: logistics-4-2
+2018-08-26 13:29:17,792 INFO     Initial h value: 13.000000
+2018-08-26 13:29:17,823 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:17,823 INFO     18 Nodes expanded
+2018-08-26 13:29:17,823 INFO     Search end: logistics-4-2
+2018-08-26 13:29:17,823 INFO     Wall-clock search time: 0.032
+2018-08-26 13:29:17,823 INFO     Plan length: 15
+2018-08-26 13:29:17,839 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:17,942 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,942 INFO     using search: astar_search
+2018-08-26 13:29:17,943 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:17,943 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:17,945 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:17,946 INFO     3 Predicates parsed
+2018-08-26 13:29:17,947 INFO     6 Actions parsed
+2018-08-26 13:29:17,947 INFO     15 Objects parsed
+2018-08-26 13:29:17,947 INFO     0 Constants parsed
+2018-08-26 13:29:17,947 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:17,951 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:17,951 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:17,952 INFO     54 Variables created
+2018-08-26 13:29:17,952 INFO     106 Operators created
+2018-08-26 13:29:17,952 INFO     Search start: logistics-4-2
+2018-08-26 13:29:17,952 INFO     Initial h value: 6.000000
+2018-08-26 13:29:20,195 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:20,195 INFO     1206 Nodes expanded
+2018-08-26 13:29:20,196 INFO     Search end: logistics-4-2
+2018-08-26 13:29:20,196 INFO     Wall-clock search time: 2.2
+2018-08-26 13:29:20,196 INFO     Plan length: 15
+2018-08-26 13:29:20,212 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:20,312 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,312 INFO     using search: weighted_astar_search
+2018-08-26 13:29:20,312 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:20,312 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,315 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl
+2018-08-26 13:29:20,316 INFO     3 Predicates parsed
+2018-08-26 13:29:20,316 INFO     6 Actions parsed
+2018-08-26 13:29:20,316 INFO     15 Objects parsed
+2018-08-26 13:29:20,316 INFO     0 Constants parsed
+2018-08-26 13:29:20,316 INFO     Grounding start: logistics-4-2
+2018-08-26 13:29:20,321 INFO     Relevance analysis removed 14 facts
+2018-08-26 13:29:20,321 INFO     Grounding end: logistics-4-2
+2018-08-26 13:29:20,321 INFO     54 Variables created
+2018-08-26 13:29:20,321 INFO     106 Operators created
+2018-08-26 13:29:20,321 INFO     Search start: logistics-4-2
+2018-08-26 13:29:20,322 INFO     Initial h value: 6.000000
+2018-08-26 13:29:20,385 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:20,385 INFO     41 Nodes expanded
+2018-08-26 13:29:20,385 INFO     Search end: logistics-4-2
+2018-08-26 13:29:20,385 INFO     Wall-clock search time: 0.064
+2018-08-26 13:29:20,385 INFO     Plan length: 15
+2018-08-26 13:29:20,402 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:20,517 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,518 INFO     using search: astar_search
+2018-08-26 13:29:20,518 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:20,518 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,521 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:20,651 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,651 INFO     using search: weighted_astar_search
+2018-08-26 13:29:20,651 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:20,651 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,654 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:20,770 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,770 INFO     using search: astar_search
+2018-08-26 13:29:20,771 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:20,771 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,773 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:20,887 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,887 INFO     using search: weighted_astar_search
+2018-08-26 13:29:20,888 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:20,888 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:20,890 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:21,007 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,008 INFO     using search: astar_search
+2018-08-26 13:29:21,008 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:21,008 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,011 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:21,129 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,129 INFO     using search: weighted_astar_search
+2018-08-26 13:29:21,129 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:21,129 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,132 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:21,245 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,246 INFO     using search: astar_search
+2018-08-26 13:29:21,246 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:21,246 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,248 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:21,359 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,360 INFO     using search: weighted_astar_search
+2018-08-26 13:29:21,360 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:21,360 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,365 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task03.pddl.soln
+2018-08-26 13:29:21,478 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,478 INFO     using search: astar_search
+2018-08-26 13:29:21,478 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:21,478 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:21,481 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:21,482 INFO     3 Predicates parsed
+2018-08-26 13:29:21,482 INFO     6 Actions parsed
+2018-08-26 13:29:21,482 INFO     15 Objects parsed
+2018-08-26 13:29:21,482 INFO     0 Constants parsed
+2018-08-26 13:29:21,482 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:21,487 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:21,488 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:21,488 INFO     54 Variables created
+2018-08-26 13:29:21,488 INFO     130 Operators created
+2018-08-26 13:29:21,488 INFO     Search start: logistics-5-0
+2018-08-26 13:29:21,488 INFO     Initial h value: 1.000000
+2018-08-26 13:29:32,038 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:32,038 INFO     110109 Nodes expanded
+2018-08-26 13:29:32,077 INFO     Search end: logistics-5-0
+2018-08-26 13:29:32,077 INFO     Wall-clock search time: 1.1e+01
+2018-08-26 13:29:32,077 INFO     Plan length: 27
+2018-08-26 13:29:32,095 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:32,201 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:32,201 INFO     using search: weighted_astar_search
+2018-08-26 13:29:32,201 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:29:32,201 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:32,204 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:32,205 INFO     3 Predicates parsed
+2018-08-26 13:29:32,205 INFO     6 Actions parsed
+2018-08-26 13:29:32,205 INFO     15 Objects parsed
+2018-08-26 13:29:32,205 INFO     0 Constants parsed
+2018-08-26 13:29:32,205 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:32,210 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:32,210 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:32,210 INFO     54 Variables created
+2018-08-26 13:29:32,210 INFO     130 Operators created
+2018-08-26 13:29:32,210 INFO     Search start: logistics-5-0
+2018-08-26 13:29:32,210 INFO     Initial h value: 1.000000
+2018-08-26 13:29:43,671 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:43,671 INFO     110183 Nodes expanded
+2018-08-26 13:29:43,718 INFO     Search end: logistics-5-0
+2018-08-26 13:29:43,719 INFO     Wall-clock search time: 1.1e+01
+2018-08-26 13:29:43,719 INFO     Plan length: 27
+2018-08-26 13:29:43,738 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:43,862 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:43,862 INFO     using search: astar_search
+2018-08-26 13:29:43,862 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:43,863 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:43,866 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:43,867 INFO     3 Predicates parsed
+2018-08-26 13:29:43,867 INFO     6 Actions parsed
+2018-08-26 13:29:43,867 INFO     15 Objects parsed
+2018-08-26 13:29:43,867 INFO     0 Constants parsed
+2018-08-26 13:29:43,867 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:43,872 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:43,872 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:43,872 INFO     54 Variables created
+2018-08-26 13:29:43,872 INFO     130 Operators created
+2018-08-26 13:29:43,873 INFO     Search start: logistics-5-0
+2018-08-26 13:29:43,873 INFO     Initial h value: 33.000000
+2018-08-26 13:29:43,962 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:43,963 INFO     38 Nodes expanded
+2018-08-26 13:29:43,963 INFO     Search end: logistics-5-0
+2018-08-26 13:29:43,963 INFO     Wall-clock search time: 0.089
+2018-08-26 13:29:43,963 INFO     Plan length: 30
+2018-08-26 13:29:43,978 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:44,092 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:44,092 INFO     using search: weighted_astar_search
+2018-08-26 13:29:44,092 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:29:44,092 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:44,095 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:44,096 INFO     3 Predicates parsed
+2018-08-26 13:29:44,096 INFO     6 Actions parsed
+2018-08-26 13:29:44,096 INFO     15 Objects parsed
+2018-08-26 13:29:44,096 INFO     0 Constants parsed
+2018-08-26 13:29:44,096 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:44,102 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:44,102 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:44,103 INFO     54 Variables created
+2018-08-26 13:29:44,103 INFO     130 Operators created
+2018-08-26 13:29:44,103 INFO     Search start: logistics-5-0
+2018-08-26 13:29:44,104 INFO     Initial h value: 33.000000
+2018-08-26 13:29:44,185 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:44,185 INFO     32 Nodes expanded
+2018-08-26 13:29:44,186 INFO     Search end: logistics-5-0
+2018-08-26 13:29:44,186 INFO     Wall-clock search time: 0.082
+2018-08-26 13:29:44,186 INFO     Plan length: 30
+2018-08-26 13:29:44,201 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:44,318 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:44,318 INFO     using search: astar_search
+2018-08-26 13:29:44,318 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:44,318 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:44,321 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:44,322 INFO     3 Predicates parsed
+2018-08-26 13:29:44,322 INFO     6 Actions parsed
+2018-08-26 13:29:44,323 INFO     15 Objects parsed
+2018-08-26 13:29:44,323 INFO     0 Constants parsed
+2018-08-26 13:29:44,323 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:44,327 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:44,328 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:44,328 INFO     54 Variables created
+2018-08-26 13:29:44,328 INFO     130 Operators created
+2018-08-26 13:29:44,328 INFO     Search start: logistics-5-0
+2018-08-26 13:29:44,329 INFO     Initial h value: 25.000000
+2018-08-26 13:29:47,326 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:47,326 INFO     934 Nodes expanded
+2018-08-26 13:29:47,328 INFO     Search end: logistics-5-0
+2018-08-26 13:29:47,328 INFO     Wall-clock search time: 3.0
+2018-08-26 13:29:47,328 INFO     Plan length: 27
+2018-08-26 13:29:47,345 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:47,457 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:47,457 INFO     using search: weighted_astar_search
+2018-08-26 13:29:47,457 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:29:47,458 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:47,460 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:47,462 INFO     3 Predicates parsed
+2018-08-26 13:29:47,462 INFO     6 Actions parsed
+2018-08-26 13:29:47,462 INFO     15 Objects parsed
+2018-08-26 13:29:47,462 INFO     0 Constants parsed
+2018-08-26 13:29:47,463 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:47,467 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:47,467 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:47,467 INFO     54 Variables created
+2018-08-26 13:29:47,467 INFO     130 Operators created
+2018-08-26 13:29:47,468 INFO     Search start: logistics-5-0
+2018-08-26 13:29:47,468 INFO     Initial h value: 25.000000
+2018-08-26 13:29:47,563 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:29:47,564 INFO     31 Nodes expanded
+2018-08-26 13:29:47,564 INFO     Search end: logistics-5-0
+2018-08-26 13:29:47,564 INFO     Wall-clock search time: 0.095
+2018-08-26 13:29:47,564 INFO     Plan length: 27
+2018-08-26 13:29:47,580 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:29:47,683 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:47,684 INFO     using search: astar_search
+2018-08-26 13:29:47,684 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:29:47,684 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:29:47,687 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:29:47,688 INFO     3 Predicates parsed
+2018-08-26 13:29:47,688 INFO     6 Actions parsed
+2018-08-26 13:29:47,688 INFO     15 Objects parsed
+2018-08-26 13:29:47,688 INFO     0 Constants parsed
+2018-08-26 13:29:47,688 INFO     Grounding start: logistics-5-0
+2018-08-26 13:29:47,693 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:29:47,693 INFO     Grounding end: logistics-5-0
+2018-08-26 13:29:47,693 INFO     54 Variables created
+2018-08-26 13:29:47,693 INFO     130 Operators created
+2018-08-26 13:29:47,693 INFO     Search start: logistics-5-0
+2018-08-26 13:29:47,694 INFO     Initial h value: 6.000000
+2018-08-26 13:33:03,621 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:03,621 INFO     74693 Nodes expanded
+2018-08-26 13:33:03,665 INFO     Search end: logistics-5-0
+2018-08-26 13:33:03,665 INFO     Wall-clock search time: 1.9e+02
+2018-08-26 13:33:03,666 INFO     Plan length: 27
+2018-08-26 13:33:03,684 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:03,793 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:03,793 INFO     using search: weighted_astar_search
+2018-08-26 13:33:03,793 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:03,794 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:03,797 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl
+2018-08-26 13:33:03,799 INFO     3 Predicates parsed
+2018-08-26 13:33:03,799 INFO     6 Actions parsed
+2018-08-26 13:33:03,799 INFO     15 Objects parsed
+2018-08-26 13:33:03,799 INFO     0 Constants parsed
+2018-08-26 13:33:03,799 INFO     Grounding start: logistics-5-0
+2018-08-26 13:33:03,804 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:03,804 INFO     Grounding end: logistics-5-0
+2018-08-26 13:33:03,804 INFO     54 Variables created
+2018-08-26 13:33:03,804 INFO     130 Operators created
+2018-08-26 13:33:03,805 INFO     Search start: logistics-5-0
+2018-08-26 13:33:03,805 INFO     Initial h value: 6.000000
+2018-08-26 13:33:10,015 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:10,015 INFO     2457 Nodes expanded
+2018-08-26 13:33:10,020 INFO     Search end: logistics-5-0
+2018-08-26 13:33:10,020 INFO     Wall-clock search time: 6.2
+2018-08-26 13:33:10,020 INFO     Plan length: 27
+2018-08-26 13:33:10,036 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:10,138 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,138 INFO     using search: astar_search
+2018-08-26 13:33:10,138 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:10,138 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,141 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,254 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,254 INFO     using search: weighted_astar_search
+2018-08-26 13:33:10,254 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:10,254 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,257 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,372 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,372 INFO     using search: astar_search
+2018-08-26 13:33:10,372 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:10,372 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,376 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,485 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,485 INFO     using search: weighted_astar_search
+2018-08-26 13:33:10,485 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:10,485 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,488 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,608 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,608 INFO     using search: astar_search
+2018-08-26 13:33:10,608 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:10,608 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,614 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,717 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,717 INFO     using search: weighted_astar_search
+2018-08-26 13:33:10,717 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:10,718 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,722 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,831 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,831 INFO     using search: astar_search
+2018-08-26 13:33:10,831 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:10,831 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,834 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:10,955 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,955 INFO     using search: weighted_astar_search
+2018-08-26 13:33:10,955 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:10,955 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:10,958 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task04.pddl.soln
+2018-08-26 13:33:11,077 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:11,077 INFO     using search: astar_search
+2018-08-26 13:33:11,077 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:11,078 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:11,080 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:11,081 INFO     3 Predicates parsed
+2018-08-26 13:33:11,081 INFO     6 Actions parsed
+2018-08-26 13:33:11,081 INFO     15 Objects parsed
+2018-08-26 13:33:11,082 INFO     0 Constants parsed
+2018-08-26 13:33:11,082 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:11,086 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:11,086 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:11,086 INFO     54 Variables created
+2018-08-26 13:33:11,087 INFO     130 Operators created
+2018-08-26 13:33:11,087 INFO     Search start: logistics-5-1
+2018-08-26 13:33:11,087 INFO     Initial h value: 1.000000
+2018-08-26 13:33:13,400 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:13,400 INFO     24704 Nodes expanded
+2018-08-26 13:33:13,414 INFO     Search end: logistics-5-1
+2018-08-26 13:33:13,415 INFO     Wall-clock search time: 2.3
+2018-08-26 13:33:13,415 INFO     Plan length: 17
+2018-08-26 13:33:13,431 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:13,545 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:13,545 INFO     using search: weighted_astar_search
+2018-08-26 13:33:13,545 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:13,546 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:13,548 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:13,549 INFO     3 Predicates parsed
+2018-08-26 13:33:13,549 INFO     6 Actions parsed
+2018-08-26 13:33:13,550 INFO     15 Objects parsed
+2018-08-26 13:33:13,550 INFO     0 Constants parsed
+2018-08-26 13:33:13,550 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:13,554 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:13,554 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:13,555 INFO     54 Variables created
+2018-08-26 13:33:13,555 INFO     130 Operators created
+2018-08-26 13:33:13,555 INFO     Search start: logistics-5-1
+2018-08-26 13:33:13,555 INFO     Initial h value: 1.000000
+2018-08-26 13:33:15,680 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:15,680 INFO     22654 Nodes expanded
+2018-08-26 13:33:15,694 INFO     Search end: logistics-5-1
+2018-08-26 13:33:15,694 INFO     Wall-clock search time: 2.1
+2018-08-26 13:33:15,694 INFO     Plan length: 17
+2018-08-26 13:33:15,710 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:15,817 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:15,817 INFO     using search: astar_search
+2018-08-26 13:33:15,817 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:15,817 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:15,820 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:15,821 INFO     3 Predicates parsed
+2018-08-26 13:33:15,821 INFO     6 Actions parsed
+2018-08-26 13:33:15,821 INFO     15 Objects parsed
+2018-08-26 13:33:15,821 INFO     0 Constants parsed
+2018-08-26 13:33:15,821 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:15,826 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:15,826 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:15,826 INFO     54 Variables created
+2018-08-26 13:33:15,826 INFO     130 Operators created
+2018-08-26 13:33:15,826 INFO     Search start: logistics-5-1
+2018-08-26 13:33:15,827 INFO     Initial h value: 18.000000
+2018-08-26 13:33:16,116 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:16,116 INFO     133 Nodes expanded
+2018-08-26 13:33:16,117 INFO     Search end: logistics-5-1
+2018-08-26 13:33:16,117 INFO     Wall-clock search time: 0.29
+2018-08-26 13:33:16,117 INFO     Plan length: 17
+2018-08-26 13:33:16,132 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:16,238 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:16,238 INFO     using search: weighted_astar_search
+2018-08-26 13:33:16,238 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:16,238 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:16,241 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:16,242 INFO     3 Predicates parsed
+2018-08-26 13:33:16,242 INFO     6 Actions parsed
+2018-08-26 13:33:16,242 INFO     15 Objects parsed
+2018-08-26 13:33:16,242 INFO     0 Constants parsed
+2018-08-26 13:33:16,242 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:16,247 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:16,247 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:16,247 INFO     54 Variables created
+2018-08-26 13:33:16,247 INFO     130 Operators created
+2018-08-26 13:33:16,247 INFO     Search start: logistics-5-1
+2018-08-26 13:33:16,248 INFO     Initial h value: 18.000000
+2018-08-26 13:33:16,300 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:16,300 INFO     22 Nodes expanded
+2018-08-26 13:33:16,300 INFO     Search end: logistics-5-1
+2018-08-26 13:33:16,300 INFO     Wall-clock search time: 0.053
+2018-08-26 13:33:16,300 INFO     Plan length: 19
+2018-08-26 13:33:16,315 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:16,424 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:16,424 INFO     using search: astar_search
+2018-08-26 13:33:16,424 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:16,424 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:16,427 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:16,428 INFO     3 Predicates parsed
+2018-08-26 13:33:16,428 INFO     6 Actions parsed
+2018-08-26 13:33:16,428 INFO     15 Objects parsed
+2018-08-26 13:33:16,428 INFO     0 Constants parsed
+2018-08-26 13:33:16,428 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:16,433 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:16,433 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:16,433 INFO     54 Variables created
+2018-08-26 13:33:16,433 INFO     130 Operators created
+2018-08-26 13:33:16,434 INFO     Search start: logistics-5-1
+2018-08-26 13:33:16,434 INFO     Initial h value: 15.000000
+2018-08-26 13:33:16,907 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:16,907 INFO     182 Nodes expanded
+2018-08-26 13:33:16,907 INFO     Search end: logistics-5-1
+2018-08-26 13:33:16,907 INFO     Wall-clock search time: 0.47
+2018-08-26 13:33:16,907 INFO     Plan length: 17
+2018-08-26 13:33:16,922 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:17,030 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:17,031 INFO     using search: weighted_astar_search
+2018-08-26 13:33:17,031 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:17,031 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:17,034 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:17,035 INFO     3 Predicates parsed
+2018-08-26 13:33:17,035 INFO     6 Actions parsed
+2018-08-26 13:33:17,035 INFO     15 Objects parsed
+2018-08-26 13:33:17,035 INFO     0 Constants parsed
+2018-08-26 13:33:17,035 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:17,040 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:17,040 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:17,040 INFO     54 Variables created
+2018-08-26 13:33:17,040 INFO     130 Operators created
+2018-08-26 13:33:17,040 INFO     Search start: logistics-5-1
+2018-08-26 13:33:17,041 INFO     Initial h value: 15.000000
+2018-08-26 13:33:17,092 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:17,092 INFO     21 Nodes expanded
+2018-08-26 13:33:17,092 INFO     Search end: logistics-5-1
+2018-08-26 13:33:17,093 INFO     Wall-clock search time: 0.052
+2018-08-26 13:33:17,093 INFO     Plan length: 17
+2018-08-26 13:33:17,107 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:17,217 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:17,217 INFO     using search: astar_search
+2018-08-26 13:33:17,217 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:17,218 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:17,221 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:17,222 INFO     3 Predicates parsed
+2018-08-26 13:33:17,222 INFO     6 Actions parsed
+2018-08-26 13:33:17,222 INFO     15 Objects parsed
+2018-08-26 13:33:17,222 INFO     0 Constants parsed
+2018-08-26 13:33:17,222 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:17,227 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:17,227 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:17,227 INFO     54 Variables created
+2018-08-26 13:33:17,227 INFO     130 Operators created
+2018-08-26 13:33:17,228 INFO     Search start: logistics-5-1
+2018-08-26 13:33:17,228 INFO     Initial h value: 6.000000
+2018-08-26 13:33:31,106 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:31,106 INFO     6206 Nodes expanded
+2018-08-26 13:33:31,110 INFO     Search end: logistics-5-1
+2018-08-26 13:33:31,110 INFO     Wall-clock search time: 1.4e+01
+2018-08-26 13:33:31,110 INFO     Plan length: 17
+2018-08-26 13:33:31,126 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:31,229 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:31,229 INFO     using search: weighted_astar_search
+2018-08-26 13:33:31,229 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:31,229 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:31,232 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task05.pddl
+2018-08-26 13:33:31,233 INFO     3 Predicates parsed
+2018-08-26 13:33:31,233 INFO     6 Actions parsed
+2018-08-26 13:33:31,233 INFO     15 Objects parsed
+2018-08-26 13:33:31,233 INFO     0 Constants parsed
+2018-08-26 13:33:31,233 INFO     Grounding start: logistics-5-1
+2018-08-26 13:33:31,238 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:31,238 INFO     Grounding end: logistics-5-1
+2018-08-26 13:33:31,238 INFO     54 Variables created
+2018-08-26 13:33:31,238 INFO     130 Operators created
+2018-08-26 13:33:31,238 INFO     Search start: logistics-5-1
+2018-08-26 13:33:31,239 INFO     Initial h value: 6.000000
+2018-08-26 13:33:31,513 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:31,513 INFO     159 Nodes expanded
+2018-08-26 13:33:31,513 INFO     Search end: logistics-5-1
+2018-08-26 13:33:31,513 INFO     Wall-clock search time: 0.27
+2018-08-26 13:33:31,513 INFO     Plan length: 19
+2018-08-26 13:33:31,529 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:31,630 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:31,630 INFO     using search: astar_search
+2018-08-26 13:33:31,630 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:31,630 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:31,633 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:31,634 INFO     3 Predicates parsed
+2018-08-26 13:33:31,634 INFO     6 Actions parsed
+2018-08-26 13:33:31,634 INFO     15 Objects parsed
+2018-08-26 13:33:31,634 INFO     0 Constants parsed
+2018-08-26 13:33:31,634 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:31,639 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:31,639 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:31,639 INFO     54 Variables created
+2018-08-26 13:33:31,639 INFO     130 Operators created
+2018-08-26 13:33:31,639 INFO     Search start: logistics-5-2
+2018-08-26 13:33:31,639 INFO     Initial h value: 1.000000
+2018-08-26 13:33:31,709 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:31,709 INFO     761 Nodes expanded
+2018-08-26 13:33:31,709 INFO     Search end: logistics-5-2
+2018-08-26 13:33:31,709 INFO     Wall-clock search time: 0.07
+2018-08-26 13:33:31,709 INFO     Plan length: 8
+2018-08-26 13:33:31,725 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:31,829 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:31,829 INFO     using search: weighted_astar_search
+2018-08-26 13:33:31,829 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:31,829 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:31,832 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:31,833 INFO     3 Predicates parsed
+2018-08-26 13:33:31,833 INFO     6 Actions parsed
+2018-08-26 13:33:31,833 INFO     15 Objects parsed
+2018-08-26 13:33:31,833 INFO     0 Constants parsed
+2018-08-26 13:33:31,834 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:31,838 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:31,838 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:31,838 INFO     54 Variables created
+2018-08-26 13:33:31,838 INFO     130 Operators created
+2018-08-26 13:33:31,839 INFO     Search start: logistics-5-2
+2018-08-26 13:33:31,839 INFO     Initial h value: 1.000000
+2018-08-26 13:33:31,916 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:31,916 INFO     902 Nodes expanded
+2018-08-26 13:33:31,916 INFO     Search end: logistics-5-2
+2018-08-26 13:33:31,916 INFO     Wall-clock search time: 0.078
+2018-08-26 13:33:31,917 INFO     Plan length: 8
+2018-08-26 13:33:31,932 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:32,039 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,039 INFO     using search: astar_search
+2018-08-26 13:33:32,039 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:32,039 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,042 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:32,043 INFO     3 Predicates parsed
+2018-08-26 13:33:32,043 INFO     6 Actions parsed
+2018-08-26 13:33:32,043 INFO     15 Objects parsed
+2018-08-26 13:33:32,043 INFO     0 Constants parsed
+2018-08-26 13:33:32,043 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:32,048 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:32,048 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:32,048 INFO     54 Variables created
+2018-08-26 13:33:32,048 INFO     130 Operators created
+2018-08-26 13:33:32,049 INFO     Search start: logistics-5-2
+2018-08-26 13:33:32,049 INFO     Initial h value: 9.000000
+2018-08-26 13:33:32,063 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:32,063 INFO     9 Nodes expanded
+2018-08-26 13:33:32,063 INFO     Search end: logistics-5-2
+2018-08-26 13:33:32,063 INFO     Wall-clock search time: 0.014
+2018-08-26 13:33:32,063 INFO     Plan length: 8
+2018-08-26 13:33:32,076 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:32,179 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,179 INFO     using search: weighted_astar_search
+2018-08-26 13:33:32,179 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:32,179 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,182 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:32,183 INFO     3 Predicates parsed
+2018-08-26 13:33:32,183 INFO     6 Actions parsed
+2018-08-26 13:33:32,183 INFO     15 Objects parsed
+2018-08-26 13:33:32,183 INFO     0 Constants parsed
+2018-08-26 13:33:32,183 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:32,188 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:32,188 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:32,188 INFO     54 Variables created
+2018-08-26 13:33:32,188 INFO     130 Operators created
+2018-08-26 13:33:32,188 INFO     Search start: logistics-5-2
+2018-08-26 13:33:32,189 INFO     Initial h value: 9.000000
+2018-08-26 13:33:32,202 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:32,202 INFO     9 Nodes expanded
+2018-08-26 13:33:32,202 INFO     Search end: logistics-5-2
+2018-08-26 13:33:32,202 INFO     Wall-clock search time: 0.014
+2018-08-26 13:33:32,202 INFO     Plan length: 8
+2018-08-26 13:33:32,217 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:32,317 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,317 INFO     using search: astar_search
+2018-08-26 13:33:32,318 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:32,318 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,320 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:32,321 INFO     3 Predicates parsed
+2018-08-26 13:33:32,322 INFO     6 Actions parsed
+2018-08-26 13:33:32,322 INFO     15 Objects parsed
+2018-08-26 13:33:32,322 INFO     0 Constants parsed
+2018-08-26 13:33:32,322 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:32,326 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:32,326 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:32,327 INFO     54 Variables created
+2018-08-26 13:33:32,327 INFO     130 Operators created
+2018-08-26 13:33:32,327 INFO     Search start: logistics-5-2
+2018-08-26 13:33:32,327 INFO     Initial h value: 8.000000
+2018-08-26 13:33:32,342 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:32,342 INFO     9 Nodes expanded
+2018-08-26 13:33:32,342 INFO     Search end: logistics-5-2
+2018-08-26 13:33:32,342 INFO     Wall-clock search time: 0.015
+2018-08-26 13:33:32,342 INFO     Plan length: 8
+2018-08-26 13:33:32,357 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:32,464 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,465 INFO     using search: weighted_astar_search
+2018-08-26 13:33:32,465 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:32,465 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,467 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:32,469 INFO     3 Predicates parsed
+2018-08-26 13:33:32,469 INFO     6 Actions parsed
+2018-08-26 13:33:32,469 INFO     15 Objects parsed
+2018-08-26 13:33:32,469 INFO     0 Constants parsed
+2018-08-26 13:33:32,469 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:32,473 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:32,474 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:32,474 INFO     54 Variables created
+2018-08-26 13:33:32,474 INFO     130 Operators created
+2018-08-26 13:33:32,474 INFO     Search start: logistics-5-2
+2018-08-26 13:33:32,474 INFO     Initial h value: 8.000000
+2018-08-26 13:33:32,490 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:32,490 INFO     9 Nodes expanded
+2018-08-26 13:33:32,490 INFO     Search end: logistics-5-2
+2018-08-26 13:33:32,490 INFO     Wall-clock search time: 0.016
+2018-08-26 13:33:32,490 INFO     Plan length: 8
+2018-08-26 13:33:32,506 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:32,612 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,612 INFO     using search: astar_search
+2018-08-26 13:33:32,612 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:32,612 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:32,615 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:32,616 INFO     3 Predicates parsed
+2018-08-26 13:33:32,616 INFO     6 Actions parsed
+2018-08-26 13:33:32,616 INFO     15 Objects parsed
+2018-08-26 13:33:32,616 INFO     0 Constants parsed
+2018-08-26 13:33:32,616 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:32,621 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:32,621 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:32,621 INFO     54 Variables created
+2018-08-26 13:33:32,621 INFO     130 Operators created
+2018-08-26 13:33:32,622 INFO     Search start: logistics-5-2
+2018-08-26 13:33:32,622 INFO     Initial h value: 2.000000
+2018-08-26 13:33:33,068 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:33,069 INFO     281 Nodes expanded
+2018-08-26 13:33:33,069 INFO     Search end: logistics-5-2
+2018-08-26 13:33:33,069 INFO     Wall-clock search time: 0.45
+2018-08-26 13:33:33,069 INFO     Plan length: 8
+2018-08-26 13:33:33,084 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:33,195 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,195 INFO     using search: weighted_astar_search
+2018-08-26 13:33:33,195 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:33,195 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,198 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl
+2018-08-26 13:33:33,199 INFO     3 Predicates parsed
+2018-08-26 13:33:33,199 INFO     6 Actions parsed
+2018-08-26 13:33:33,199 INFO     15 Objects parsed
+2018-08-26 13:33:33,199 INFO     0 Constants parsed
+2018-08-26 13:33:33,199 INFO     Grounding start: logistics-5-2
+2018-08-26 13:33:33,204 INFO     Relevance analysis removed 7 facts
+2018-08-26 13:33:33,204 INFO     Grounding end: logistics-5-2
+2018-08-26 13:33:33,204 INFO     54 Variables created
+2018-08-26 13:33:33,204 INFO     130 Operators created
+2018-08-26 13:33:33,205 INFO     Search start: logistics-5-2
+2018-08-26 13:33:33,205 INFO     Initial h value: 2.000000
+2018-08-26 13:33:33,320 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:33:33,321 INFO     64 Nodes expanded
+2018-08-26 13:33:33,321 INFO     Search end: logistics-5-2
+2018-08-26 13:33:33,321 INFO     Wall-clock search time: 0.12
+2018-08-26 13:33:33,321 INFO     Plan length: 8
+2018-08-26 13:33:33,336 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:33:33,436 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,436 INFO     using search: astar_search
+2018-08-26 13:33:33,436 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:33,436 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,439 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:33,554 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,554 INFO     using search: weighted_astar_search
+2018-08-26 13:33:33,554 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:33,554 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,557 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:33,674 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,675 INFO     using search: astar_search
+2018-08-26 13:33:33,675 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:33,675 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,678 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:33,787 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,787 INFO     using search: weighted_astar_search
+2018-08-26 13:33:33,787 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:33:33,787 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,790 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:33,926 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,926 INFO     using search: astar_search
+2018-08-26 13:33:33,926 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:33,926 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:33,929 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:34,030 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,030 INFO     using search: weighted_astar_search
+2018-08-26 13:33:34,030 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:33:34,030 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,033 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:34,153 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,153 INFO     using search: astar_search
+2018-08-26 13:33:34,153 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:34,153 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,156 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:34,279 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,279 INFO     using search: weighted_astar_search
+2018-08-26 13:33:34,279 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:33:34,279 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,282 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task06.pddl.soln
+2018-08-26 13:33:34,398 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,398 INFO     using search: astar_search
+2018-08-26 13:33:34,398 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:33:34,398 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:33:34,401 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:33:34,411 INFO     3 Predicates parsed
+2018-08-26 13:33:34,411 INFO     6 Actions parsed
+2018-08-26 13:33:34,411 INFO     15 Objects parsed
+2018-08-26 13:33:34,411 INFO     0 Constants parsed
+2018-08-26 13:33:34,411 INFO     Grounding start: logistics-6-0
+2018-08-26 13:33:34,419 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:33:34,419 INFO     Grounding end: logistics-6-0
+2018-08-26 13:33:34,420 INFO     54 Variables created
+2018-08-26 13:33:34,420 INFO     154 Operators created
+2018-08-26 13:33:34,420 INFO     Search start: logistics-6-0
+2018-08-26 13:33:34,420 INFO     Initial h value: 1.000000
+2018-08-26 13:34:41,160 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:34:41,169 INFO     475503 Nodes expanded
+2018-08-26 13:34:41,488 INFO     Search end: logistics-6-0
+2018-08-26 13:34:41,489 INFO     Wall-clock search time: 6.4e+01
+2018-08-26 13:34:41,489 INFO     Plan length: 25
+2018-08-26 13:34:41,509 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:34:41,792 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:34:41,792 INFO     using search: weighted_astar_search
+2018-08-26 13:34:41,792 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:34:41,792 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:34:41,796 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:34:41,798 INFO     3 Predicates parsed
+2018-08-26 13:34:41,798 INFO     6 Actions parsed
+2018-08-26 13:34:41,798 INFO     15 Objects parsed
+2018-08-26 13:34:41,799 INFO     0 Constants parsed
+2018-08-26 13:34:41,799 INFO     Grounding start: logistics-6-0
+2018-08-26 13:34:41,803 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:34:41,804 INFO     Grounding end: logistics-6-0
+2018-08-26 13:34:41,804 INFO     54 Variables created
+2018-08-26 13:34:41,804 INFO     154 Operators created
+2018-08-26 13:34:41,804 INFO     Search start: logistics-6-0
+2018-08-26 13:34:41,804 INFO     Initial h value: 1.000000
+2018-08-26 13:35:41,369 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:35:41,386 INFO     482536 Nodes expanded
+2018-08-26 13:35:41,709 INFO     Search end: logistics-6-0
+2018-08-26 13:35:41,709 INFO     Wall-clock search time: 5.9e+01
+2018-08-26 13:35:41,709 INFO     Plan length: 25
+2018-08-26 13:35:41,727 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:35:42,000 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:42,000 INFO     using search: astar_search
+2018-08-26 13:35:42,000 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:35:42,000 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:42,006 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:35:42,009 INFO     3 Predicates parsed
+2018-08-26 13:35:42,009 INFO     6 Actions parsed
+2018-08-26 13:35:42,009 INFO     15 Objects parsed
+2018-08-26 13:35:42,009 INFO     0 Constants parsed
+2018-08-26 13:35:42,009 INFO     Grounding start: logistics-6-0
+2018-08-26 13:35:42,016 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:35:42,016 INFO     Grounding end: logistics-6-0
+2018-08-26 13:35:42,016 INFO     54 Variables created
+2018-08-26 13:35:42,016 INFO     154 Operators created
+2018-08-26 13:35:42,016 INFO     Search start: logistics-6-0
+2018-08-26 13:35:42,017 INFO     Initial h value: 30.000000
+2018-08-26 13:35:42,244 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:35:42,244 INFO     75 Nodes expanded
+2018-08-26 13:35:42,244 INFO     Search end: logistics-6-0
+2018-08-26 13:35:42,244 INFO     Wall-clock search time: 0.23
+2018-08-26 13:35:42,244 INFO     Plan length: 28
+2018-08-26 13:35:42,258 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:35:42,370 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:42,370 INFO     using search: weighted_astar_search
+2018-08-26 13:35:42,370 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:35:42,370 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:42,373 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:35:42,374 INFO     3 Predicates parsed
+2018-08-26 13:35:42,374 INFO     6 Actions parsed
+2018-08-26 13:35:42,374 INFO     15 Objects parsed
+2018-08-26 13:35:42,374 INFO     0 Constants parsed
+2018-08-26 13:35:42,374 INFO     Grounding start: logistics-6-0
+2018-08-26 13:35:42,379 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:35:42,379 INFO     Grounding end: logistics-6-0
+2018-08-26 13:35:42,379 INFO     54 Variables created
+2018-08-26 13:35:42,379 INFO     154 Operators created
+2018-08-26 13:35:42,380 INFO     Search start: logistics-6-0
+2018-08-26 13:35:42,381 INFO     Initial h value: 30.000000
+2018-08-26 13:35:42,461 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:35:42,461 INFO     29 Nodes expanded
+2018-08-26 13:35:42,461 INFO     Search end: logistics-6-0
+2018-08-26 13:35:42,461 INFO     Wall-clock search time: 0.081
+2018-08-26 13:35:42,462 INFO     Plan length: 28
+2018-08-26 13:35:42,478 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:35:42,589 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:42,589 INFO     using search: astar_search
+2018-08-26 13:35:42,589 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:35:42,589 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:42,592 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:35:42,593 INFO     3 Predicates parsed
+2018-08-26 13:35:42,593 INFO     6 Actions parsed
+2018-08-26 13:35:42,593 INFO     15 Objects parsed
+2018-08-26 13:35:42,593 INFO     0 Constants parsed
+2018-08-26 13:35:42,593 INFO     Grounding start: logistics-6-0
+2018-08-26 13:35:42,598 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:35:42,598 INFO     Grounding end: logistics-6-0
+2018-08-26 13:35:42,598 INFO     54 Variables created
+2018-08-26 13:35:42,598 INFO     154 Operators created
+2018-08-26 13:35:42,599 INFO     Search start: logistics-6-0
+2018-08-26 13:35:42,599 INFO     Initial h value: 23.000000
+2018-08-26 13:35:45,973 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:35:45,973 INFO     933 Nodes expanded
+2018-08-26 13:35:45,975 INFO     Search end: logistics-6-0
+2018-08-26 13:35:45,975 INFO     Wall-clock search time: 3.4
+2018-08-26 13:35:45,976 INFO     Plan length: 25
+2018-08-26 13:35:45,991 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:35:46,098 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:46,099 INFO     using search: weighted_astar_search
+2018-08-26 13:35:46,099 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:35:46,099 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:46,101 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:35:46,103 INFO     3 Predicates parsed
+2018-08-26 13:35:46,103 INFO     6 Actions parsed
+2018-08-26 13:35:46,103 INFO     15 Objects parsed
+2018-08-26 13:35:46,103 INFO     0 Constants parsed
+2018-08-26 13:35:46,103 INFO     Grounding start: logistics-6-0
+2018-08-26 13:35:46,107 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:35:46,108 INFO     Grounding end: logistics-6-0
+2018-08-26 13:35:46,108 INFO     54 Variables created
+2018-08-26 13:35:46,108 INFO     154 Operators created
+2018-08-26 13:35:46,108 INFO     Search start: logistics-6-0
+2018-08-26 13:35:46,109 INFO     Initial h value: 23.000000
+2018-08-26 13:35:46,197 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:35:46,198 INFO     29 Nodes expanded
+2018-08-26 13:35:46,198 INFO     Search end: logistics-6-0
+2018-08-26 13:35:46,198 INFO     Wall-clock search time: 0.09
+2018-08-26 13:35:46,198 INFO     Plan length: 25
+2018-08-26 13:35:46,213 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:35:46,320 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:46,320 INFO     using search: astar_search
+2018-08-26 13:35:46,320 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:35:46,320 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:35:46,323 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:35:46,324 INFO     3 Predicates parsed
+2018-08-26 13:35:46,324 INFO     6 Actions parsed
+2018-08-26 13:35:46,324 INFO     15 Objects parsed
+2018-08-26 13:35:46,324 INFO     0 Constants parsed
+2018-08-26 13:35:46,324 INFO     Grounding start: logistics-6-0
+2018-08-26 13:35:46,329 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:35:46,329 INFO     Grounding end: logistics-6-0
+2018-08-26 13:35:46,329 INFO     54 Variables created
+2018-08-26 13:35:46,329 INFO     154 Operators created
+2018-08-26 13:35:46,330 INFO     Search start: logistics-6-0
+2018-08-26 13:35:46,330 INFO     Initial h value: 6.000000
+2018-08-26 13:47:15,012 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:15,012 INFO     202229 Nodes expanded
+2018-08-26 13:47:15,211 INFO     Search end: logistics-6-0
+2018-08-26 13:47:15,212 INFO     Wall-clock search time: 6.8e+02
+2018-08-26 13:47:15,212 INFO     Plan length: 25
+2018-08-26 13:47:15,230 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:15,536 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:15,537 INFO     using search: weighted_astar_search
+2018-08-26 13:47:15,537 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:47:15,537 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:15,541 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task07.pddl
+2018-08-26 13:47:15,543 INFO     3 Predicates parsed
+2018-08-26 13:47:15,543 INFO     6 Actions parsed
+2018-08-26 13:47:15,543 INFO     15 Objects parsed
+2018-08-26 13:47:15,544 INFO     0 Constants parsed
+2018-08-26 13:47:15,544 INFO     Grounding start: logistics-6-0
+2018-08-26 13:47:15,548 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:15,549 INFO     Grounding end: logistics-6-0
+2018-08-26 13:47:15,549 INFO     54 Variables created
+2018-08-26 13:47:15,549 INFO     154 Operators created
+2018-08-26 13:47:15,549 INFO     Search start: logistics-6-0
+2018-08-26 13:47:15,550 INFO     Initial h value: 6.000000
+2018-08-26 13:47:42,102 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:42,112 INFO     9001 Nodes expanded
+2018-08-26 13:47:42,134 INFO     Search end: logistics-6-0
+2018-08-26 13:47:42,135 INFO     Wall-clock search time: 2.7e+01
+2018-08-26 13:47:42,135 INFO     Plan length: 26
+2018-08-26 13:47:42,140 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:42,243 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:42,243 INFO     using search: astar_search
+2018-08-26 13:47:42,243 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:47:42,243 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:42,246 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:42,247 INFO     3 Predicates parsed
+2018-08-26 13:47:42,248 INFO     6 Actions parsed
+2018-08-26 13:47:42,248 INFO     15 Objects parsed
+2018-08-26 13:47:42,248 INFO     0 Constants parsed
+2018-08-26 13:47:42,248 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:42,252 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:42,253 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:42,253 INFO     54 Variables created
+2018-08-26 13:47:42,253 INFO     154 Operators created
+2018-08-26 13:47:42,253 INFO     Search start: logistics-6-1
+2018-08-26 13:47:42,253 INFO     Initial h value: 1.000000
+2018-08-26 13:47:45,008 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:45,008 INFO     26208 Nodes expanded
+2018-08-26 13:47:45,032 INFO     Search end: logistics-6-1
+2018-08-26 13:47:45,032 INFO     Wall-clock search time: 2.8
+2018-08-26 13:47:45,032 INFO     Plan length: 14
+2018-08-26 13:47:45,050 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:45,156 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:45,156 INFO     using search: weighted_astar_search
+2018-08-26 13:47:45,156 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:47:45,156 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:45,159 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:45,160 INFO     3 Predicates parsed
+2018-08-26 13:47:45,160 INFO     6 Actions parsed
+2018-08-26 13:47:45,160 INFO     15 Objects parsed
+2018-08-26 13:47:45,160 INFO     0 Constants parsed
+2018-08-26 13:47:45,160 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:45,165 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:45,165 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:45,165 INFO     54 Variables created
+2018-08-26 13:47:45,165 INFO     154 Operators created
+2018-08-26 13:47:45,165 INFO     Search start: logistics-6-1
+2018-08-26 13:47:45,165 INFO     Initial h value: 1.000000
+2018-08-26 13:47:48,246 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:48,246 INFO     29348 Nodes expanded
+2018-08-26 13:47:48,273 INFO     Search end: logistics-6-1
+2018-08-26 13:47:48,273 INFO     Wall-clock search time: 3.1
+2018-08-26 13:47:48,274 INFO     Plan length: 14
+2018-08-26 13:47:48,290 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:48,391 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,392 INFO     using search: astar_search
+2018-08-26 13:47:48,392 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:47:48,392 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,395 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:48,396 INFO     3 Predicates parsed
+2018-08-26 13:47:48,396 INFO     6 Actions parsed
+2018-08-26 13:47:48,396 INFO     15 Objects parsed
+2018-08-26 13:47:48,396 INFO     0 Constants parsed
+2018-08-26 13:47:48,396 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:48,401 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:48,401 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:48,401 INFO     54 Variables created
+2018-08-26 13:47:48,401 INFO     154 Operators created
+2018-08-26 13:47:48,401 INFO     Search start: logistics-6-1
+2018-08-26 13:47:48,402 INFO     Initial h value: 15.000000
+2018-08-26 13:47:48,438 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:48,439 INFO     15 Nodes expanded
+2018-08-26 13:47:48,439 INFO     Search end: logistics-6-1
+2018-08-26 13:47:48,439 INFO     Wall-clock search time: 0.037
+2018-08-26 13:47:48,439 INFO     Plan length: 14
+2018-08-26 13:47:48,454 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:48,552 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,553 INFO     using search: weighted_astar_search
+2018-08-26 13:47:48,553 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:47:48,553 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,556 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:48,557 INFO     3 Predicates parsed
+2018-08-26 13:47:48,557 INFO     6 Actions parsed
+2018-08-26 13:47:48,557 INFO     15 Objects parsed
+2018-08-26 13:47:48,557 INFO     0 Constants parsed
+2018-08-26 13:47:48,557 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:48,562 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:48,562 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:48,562 INFO     54 Variables created
+2018-08-26 13:47:48,562 INFO     154 Operators created
+2018-08-26 13:47:48,563 INFO     Search start: logistics-6-1
+2018-08-26 13:47:48,563 INFO     Initial h value: 15.000000
+2018-08-26 13:47:48,600 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:48,600 INFO     15 Nodes expanded
+2018-08-26 13:47:48,600 INFO     Search end: logistics-6-1
+2018-08-26 13:47:48,600 INFO     Wall-clock search time: 0.037
+2018-08-26 13:47:48,600 INFO     Plan length: 14
+2018-08-26 13:47:48,615 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:48,715 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,715 INFO     using search: astar_search
+2018-08-26 13:47:48,715 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:47:48,715 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,718 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:48,719 INFO     3 Predicates parsed
+2018-08-26 13:47:48,719 INFO     6 Actions parsed
+2018-08-26 13:47:48,719 INFO     15 Objects parsed
+2018-08-26 13:47:48,719 INFO     0 Constants parsed
+2018-08-26 13:47:48,719 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:48,724 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:48,724 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:48,724 INFO     54 Variables created
+2018-08-26 13:47:48,724 INFO     154 Operators created
+2018-08-26 13:47:48,725 INFO     Search start: logistics-6-1
+2018-08-26 13:47:48,725 INFO     Initial h value: 13.000000
+2018-08-26 13:47:48,827 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:48,827 INFO     33 Nodes expanded
+2018-08-26 13:47:48,827 INFO     Search end: logistics-6-1
+2018-08-26 13:47:48,827 INFO     Wall-clock search time: 0.1
+2018-08-26 13:47:48,827 INFO     Plan length: 14
+2018-08-26 13:47:48,843 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:48,942 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,942 INFO     using search: weighted_astar_search
+2018-08-26 13:47:48,942 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:47:48,942 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:48,945 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:48,946 INFO     3 Predicates parsed
+2018-08-26 13:47:48,946 INFO     6 Actions parsed
+2018-08-26 13:47:48,946 INFO     15 Objects parsed
+2018-08-26 13:47:48,946 INFO     0 Constants parsed
+2018-08-26 13:47:48,946 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:48,951 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:48,951 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:48,951 INFO     54 Variables created
+2018-08-26 13:47:48,951 INFO     154 Operators created
+2018-08-26 13:47:48,952 INFO     Search start: logistics-6-1
+2018-08-26 13:47:48,952 INFO     Initial h value: 13.000000
+2018-08-26 13:47:48,990 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:48,990 INFO     15 Nodes expanded
+2018-08-26 13:47:48,990 INFO     Search end: logistics-6-1
+2018-08-26 13:47:48,990 INFO     Wall-clock search time: 0.038
+2018-08-26 13:47:48,990 INFO     Plan length: 14
+2018-08-26 13:47:49,005 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:49,109 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:49,109 INFO     using search: astar_search
+2018-08-26 13:47:49,109 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:47:49,109 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:49,112 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:49,113 INFO     3 Predicates parsed
+2018-08-26 13:47:49,113 INFO     6 Actions parsed
+2018-08-26 13:47:49,113 INFO     15 Objects parsed
+2018-08-26 13:47:49,113 INFO     0 Constants parsed
+2018-08-26 13:47:49,113 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:49,118 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:49,118 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:49,118 INFO     54 Variables created
+2018-08-26 13:47:49,118 INFO     154 Operators created
+2018-08-26 13:47:49,118 INFO     Search start: logistics-6-1
+2018-08-26 13:47:49,119 INFO     Initial h value: 6.000000
+2018-08-26 13:47:58,999 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:58,999 INFO     3606 Nodes expanded
+2018-08-26 13:47:59,002 INFO     Search end: logistics-6-1
+2018-08-26 13:47:59,002 INFO     Wall-clock search time: 9.9
+2018-08-26 13:47:59,002 INFO     Plan length: 14
+2018-08-26 13:47:59,018 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:59,123 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:59,123 INFO     using search: weighted_astar_search
+2018-08-26 13:47:59,123 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:47:59,123 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:59,126 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task08.pddl
+2018-08-26 13:47:59,127 INFO     3 Predicates parsed
+2018-08-26 13:47:59,127 INFO     6 Actions parsed
+2018-08-26 13:47:59,127 INFO     15 Objects parsed
+2018-08-26 13:47:59,127 INFO     0 Constants parsed
+2018-08-26 13:47:59,127 INFO     Grounding start: logistics-6-1
+2018-08-26 13:47:59,132 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:59,132 INFO     Grounding end: logistics-6-1
+2018-08-26 13:47:59,132 INFO     54 Variables created
+2018-08-26 13:47:59,132 INFO     154 Operators created
+2018-08-26 13:47:59,133 INFO     Search start: logistics-6-1
+2018-08-26 13:47:59,133 INFO     Initial h value: 6.000000
+2018-08-26 13:47:59,414 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:47:59,414 INFO     135 Nodes expanded
+2018-08-26 13:47:59,414 INFO     Search end: logistics-6-1
+2018-08-26 13:47:59,414 INFO     Wall-clock search time: 0.28
+2018-08-26 13:47:59,414 INFO     Plan length: 16
+2018-08-26 13:47:59,429 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:47:59,533 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:59,533 INFO     using search: astar_search
+2018-08-26 13:47:59,533 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:47:59,533 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:47:59,536 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:47:59,546 INFO     3 Predicates parsed
+2018-08-26 13:47:59,546 INFO     6 Actions parsed
+2018-08-26 13:47:59,546 INFO     15 Objects parsed
+2018-08-26 13:47:59,547 INFO     0 Constants parsed
+2018-08-26 13:47:59,547 INFO     Grounding start: logistics-6-2
+2018-08-26 13:47:59,554 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:47:59,554 INFO     Grounding end: logistics-6-2
+2018-08-26 13:47:59,555 INFO     54 Variables created
+2018-08-26 13:47:59,555 INFO     154 Operators created
+2018-08-26 13:47:59,555 INFO     Search start: logistics-6-2
+2018-08-26 13:47:59,555 INFO     Initial h value: 1.000000
+2018-08-26 13:48:56,143 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:48:56,143 INFO     490850 Nodes expanded
+2018-08-26 13:48:56,436 INFO     Search end: logistics-6-2
+2018-08-26 13:48:56,436 INFO     Wall-clock search time: 5.7e+01
+2018-08-26 13:48:56,436 INFO     Plan length: 25
+2018-08-26 13:48:56,454 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:48:56,562 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:48:56,562 INFO     using search: weighted_astar_search
+2018-08-26 13:48:56,562 INFO     using heuristic: BlindHeuristic
+2018-08-26 13:48:56,562 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:48:56,565 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:48:56,566 INFO     3 Predicates parsed
+2018-08-26 13:48:56,566 INFO     6 Actions parsed
+2018-08-26 13:48:56,566 INFO     15 Objects parsed
+2018-08-26 13:48:56,566 INFO     0 Constants parsed
+2018-08-26 13:48:56,566 INFO     Grounding start: logistics-6-2
+2018-08-26 13:48:56,571 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:48:56,571 INFO     Grounding end: logistics-6-2
+2018-08-26 13:48:56,571 INFO     54 Variables created
+2018-08-26 13:48:56,571 INFO     154 Operators created
+2018-08-26 13:48:56,571 INFO     Search start: logistics-6-2
+2018-08-26 13:48:56,571 INFO     Initial h value: 1.000000
+2018-08-26 13:49:51,896 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:49:51,896 INFO     462795 Nodes expanded
+2018-08-26 13:49:52,196 INFO     Search end: logistics-6-2
+2018-08-26 13:49:52,196 INFO     Wall-clock search time: 5.5e+01
+2018-08-26 13:49:52,196 INFO     Plan length: 25
+2018-08-26 13:49:52,215 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:49:52,330 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:52,330 INFO     using search: astar_search
+2018-08-26 13:49:52,330 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:49:52,331 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:52,333 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:49:52,334 INFO     3 Predicates parsed
+2018-08-26 13:49:52,334 INFO     6 Actions parsed
+2018-08-26 13:49:52,335 INFO     15 Objects parsed
+2018-08-26 13:49:52,335 INFO     0 Constants parsed
+2018-08-26 13:49:52,335 INFO     Grounding start: logistics-6-2
+2018-08-26 13:49:52,339 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:49:52,339 INFO     Grounding end: logistics-6-2
+2018-08-26 13:49:52,339 INFO     54 Variables created
+2018-08-26 13:49:52,340 INFO     154 Operators created
+2018-08-26 13:49:52,340 INFO     Search start: logistics-6-2
+2018-08-26 13:49:52,341 INFO     Initial h value: 30.000000
+2018-08-26 13:49:52,420 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:49:52,420 INFO     32 Nodes expanded
+2018-08-26 13:49:52,420 INFO     Search end: logistics-6-2
+2018-08-26 13:49:52,420 INFO     Wall-clock search time: 0.08
+2018-08-26 13:49:52,420 INFO     Plan length: 27
+2018-08-26 13:49:52,436 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:49:52,536 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:52,536 INFO     using search: weighted_astar_search
+2018-08-26 13:49:52,536 INFO     using heuristic: hAddHeuristic
+2018-08-26 13:49:52,536 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:52,539 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:49:52,540 INFO     3 Predicates parsed
+2018-08-26 13:49:52,540 INFO     6 Actions parsed
+2018-08-26 13:49:52,540 INFO     15 Objects parsed
+2018-08-26 13:49:52,540 INFO     0 Constants parsed
+2018-08-26 13:49:52,540 INFO     Grounding start: logistics-6-2
+2018-08-26 13:49:52,545 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:49:52,545 INFO     Grounding end: logistics-6-2
+2018-08-26 13:49:52,545 INFO     54 Variables created
+2018-08-26 13:49:52,545 INFO     154 Operators created
+2018-08-26 13:49:52,546 INFO     Search start: logistics-6-2
+2018-08-26 13:49:52,546 INFO     Initial h value: 30.000000
+2018-08-26 13:49:52,633 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:49:52,636 INFO     29 Nodes expanded
+2018-08-26 13:49:52,637 INFO     Search end: logistics-6-2
+2018-08-26 13:49:52,637 INFO     Wall-clock search time: 0.088
+2018-08-26 13:49:52,638 INFO     Plan length: 27
+2018-08-26 13:49:52,647 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:49:52,757 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:52,757 INFO     using search: astar_search
+2018-08-26 13:49:52,757 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:49:52,757 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:52,761 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:49:52,763 INFO     3 Predicates parsed
+2018-08-26 13:49:52,763 INFO     6 Actions parsed
+2018-08-26 13:49:52,763 INFO     15 Objects parsed
+2018-08-26 13:49:52,763 INFO     0 Constants parsed
+2018-08-26 13:49:52,763 INFO     Grounding start: logistics-6-2
+2018-08-26 13:49:52,770 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:49:52,771 INFO     Grounding end: logistics-6-2
+2018-08-26 13:49:52,771 INFO     54 Variables created
+2018-08-26 13:49:52,771 INFO     154 Operators created
+2018-08-26 13:49:52,771 INFO     Search start: logistics-6-2
+2018-08-26 13:49:52,772 INFO     Initial h value: 23.000000
+2018-08-26 13:49:54,710 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:49:54,710 INFO     517 Nodes expanded
+2018-08-26 13:49:54,712 INFO     Search end: logistics-6-2
+2018-08-26 13:49:54,712 INFO     Wall-clock search time: 1.9
+2018-08-26 13:49:54,712 INFO     Plan length: 25
+2018-08-26 13:49:54,727 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:49:54,829 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:54,830 INFO     using search: weighted_astar_search
+2018-08-26 13:49:54,830 INFO     using heuristic: hFFHeuristic
+2018-08-26 13:49:54,830 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:54,834 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:49:54,836 INFO     3 Predicates parsed
+2018-08-26 13:49:54,836 INFO     6 Actions parsed
+2018-08-26 13:49:54,836 INFO     15 Objects parsed
+2018-08-26 13:49:54,836 INFO     0 Constants parsed
+2018-08-26 13:49:54,836 INFO     Grounding start: logistics-6-2
+2018-08-26 13:49:54,841 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:49:54,841 INFO     Grounding end: logistics-6-2
+2018-08-26 13:49:54,841 INFO     54 Variables created
+2018-08-26 13:49:54,842 INFO     154 Operators created
+2018-08-26 13:49:54,842 INFO     Search start: logistics-6-2
+2018-08-26 13:49:54,843 INFO     Initial h value: 23.000000
+2018-08-26 13:49:54,944 INFO     Goal reached. Start extraction of solution.
+2018-08-26 13:49:54,944 INFO     28 Nodes expanded
+2018-08-26 13:49:54,944 INFO     Search end: logistics-6-2
+2018-08-26 13:49:54,944 INFO     Wall-clock search time: 0.1
+2018-08-26 13:49:54,945 INFO     Plan length: 25
+2018-08-26 13:49:54,960 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 13:49:55,064 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:55,064 INFO     using search: astar_search
+2018-08-26 13:49:55,064 INFO     using heuristic: hMaxHeuristic
+2018-08-26 13:49:55,064 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 13:49:55,067 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 13:49:55,068 INFO     3 Predicates parsed
+2018-08-26 13:49:55,068 INFO     6 Actions parsed
+2018-08-26 13:49:55,068 INFO     15 Objects parsed
+2018-08-26 13:49:55,068 INFO     0 Constants parsed
+2018-08-26 13:49:55,068 INFO     Grounding start: logistics-6-2
+2018-08-26 13:49:55,073 INFO     Relevance analysis removed 0 facts
+2018-08-26 13:49:55,073 INFO     Grounding end: logistics-6-2
+2018-08-26 13:49:55,073 INFO     54 Variables created
+2018-08-26 13:49:55,073 INFO     154 Operators created
+2018-08-26 13:49:55,074 INFO     Search start: logistics-6-2
+2018-08-26 13:49:55,075 INFO     Initial h value: 6.000000
+2018-08-26 14:01:08,433 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:01:08,440 INFO     200017 Nodes expanded
+2018-08-26 14:01:08,640 INFO     Search end: logistics-6-2
+2018-08-26 14:01:08,640 INFO     Wall-clock search time: 6.6e+02
+2018-08-26 14:01:08,640 INFO     Plan length: 25
+2018-08-26 14:01:08,657 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:01:08,954 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:01:08,954 INFO     using search: weighted_astar_search
+2018-08-26 14:01:08,954 INFO     using heuristic: hMaxHeuristic
+2018-08-26 14:01:08,954 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:01:08,959 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task09.pddl
+2018-08-26 14:01:08,960 INFO     3 Predicates parsed
+2018-08-26 14:01:08,961 INFO     6 Actions parsed
+2018-08-26 14:01:08,961 INFO     15 Objects parsed
+2018-08-26 14:01:08,961 INFO     0 Constants parsed
+2018-08-26 14:01:08,961 INFO     Grounding start: logistics-6-2
+2018-08-26 14:01:08,967 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:01:08,967 INFO     Grounding end: logistics-6-2
+2018-08-26 14:01:08,967 INFO     54 Variables created
+2018-08-26 14:01:08,967 INFO     154 Operators created
+2018-08-26 14:01:08,968 INFO     Search start: logistics-6-2
+2018-08-26 14:01:08,968 INFO     Initial h value: 6.000000
+2018-08-26 14:01:19,666 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:01:19,666 INFO     3669 Nodes expanded
+2018-08-26 14:01:19,674 INFO     Search end: logistics-6-2
+2018-08-26 14:01:19,674 INFO     Wall-clock search time: 1.1e+01
+2018-08-26 14:01:19,674 INFO     Plan length: 28
+2018-08-26 14:01:19,690 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:01:19,803 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:01:19,803 INFO     using search: astar_search
+2018-08-26 14:01:19,803 INFO     using heuristic: BlindHeuristic
+2018-08-26 14:01:19,803 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:01:19,806 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:01:19,816 INFO     3 Predicates parsed
+2018-08-26 14:01:19,817 INFO     6 Actions parsed
+2018-08-26 14:01:19,817 INFO     15 Objects parsed
+2018-08-26 14:01:19,817 INFO     0 Constants parsed
+2018-08-26 14:01:19,817 INFO     Grounding start: logistics-6-3
+2018-08-26 14:01:19,825 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:01:19,825 INFO     Grounding end: logistics-6-3
+2018-08-26 14:01:19,825 INFO     54 Variables created
+2018-08-26 14:01:19,825 INFO     154 Operators created
+2018-08-26 14:01:19,826 INFO     Search start: logistics-6-3
+2018-08-26 14:01:19,826 INFO     Initial h value: 1.000000
+2018-08-26 14:02:10,113 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:02:10,121 INFO     429345 Nodes expanded
+2018-08-26 14:02:10,401 INFO     Search end: logistics-6-3
+2018-08-26 14:02:10,401 INFO     Wall-clock search time: 5.1e+01
+2018-08-26 14:02:10,401 INFO     Plan length: 24
+2018-08-26 14:02:10,419 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:02:10,675 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:02:10,675 INFO     using search: weighted_astar_search
+2018-08-26 14:02:10,676 INFO     using heuristic: BlindHeuristic
+2018-08-26 14:02:10,676 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:02:10,679 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:02:10,681 INFO     3 Predicates parsed
+2018-08-26 14:02:10,681 INFO     6 Actions parsed
+2018-08-26 14:02:10,681 INFO     15 Objects parsed
+2018-08-26 14:02:10,682 INFO     0 Constants parsed
+2018-08-26 14:02:10,682 INFO     Grounding start: logistics-6-3
+2018-08-26 14:02:10,687 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:02:10,688 INFO     Grounding end: logistics-6-3
+2018-08-26 14:02:10,688 INFO     54 Variables created
+2018-08-26 14:02:10,688 INFO     154 Operators created
+2018-08-26 14:02:10,688 INFO     Search start: logistics-6-3
+2018-08-26 14:02:10,688 INFO     Initial h value: 1.000000
+2018-08-26 14:03:00,534 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:03:00,534 INFO     421125 Nodes expanded
+2018-08-26 14:03:00,840 INFO     Search end: logistics-6-3
+2018-08-26 14:03:00,840 INFO     Wall-clock search time: 5e+01
+2018-08-26 14:03:00,840 INFO     Plan length: 24
+2018-08-26 14:03:00,858 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:03:00,996 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:00,996 INFO     using search: astar_search
+2018-08-26 14:03:00,996 INFO     using heuristic: hAddHeuristic
+2018-08-26 14:03:00,996 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:01,002 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:03:01,003 INFO     3 Predicates parsed
+2018-08-26 14:03:01,004 INFO     6 Actions parsed
+2018-08-26 14:03:01,004 INFO     15 Objects parsed
+2018-08-26 14:03:01,004 INFO     0 Constants parsed
+2018-08-26 14:03:01,004 INFO     Grounding start: logistics-6-3
+2018-08-26 14:03:01,010 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:03:01,010 INFO     Grounding end: logistics-6-3
+2018-08-26 14:03:01,010 INFO     54 Variables created
+2018-08-26 14:03:01,010 INFO     154 Operators created
+2018-08-26 14:03:01,011 INFO     Search start: logistics-6-3
+2018-08-26 14:03:01,012 INFO     Initial h value: 27.000000
+2018-08-26 14:03:01,103 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:03:01,103 INFO     25 Nodes expanded
+2018-08-26 14:03:01,103 INFO     Search end: logistics-6-3
+2018-08-26 14:03:01,104 INFO     Wall-clock search time: 0.092
+2018-08-26 14:03:01,104 INFO     Plan length: 24
+2018-08-26 14:03:01,119 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:03:01,223 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:01,224 INFO     using search: weighted_astar_search
+2018-08-26 14:03:01,224 INFO     using heuristic: hAddHeuristic
+2018-08-26 14:03:01,224 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:01,227 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:03:01,229 INFO     3 Predicates parsed
+2018-08-26 14:03:01,229 INFO     6 Actions parsed
+2018-08-26 14:03:01,229 INFO     15 Objects parsed
+2018-08-26 14:03:01,229 INFO     0 Constants parsed
+2018-08-26 14:03:01,229 INFO     Grounding start: logistics-6-3
+2018-08-26 14:03:01,238 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:03:01,238 INFO     Grounding end: logistics-6-3
+2018-08-26 14:03:01,238 INFO     54 Variables created
+2018-08-26 14:03:01,238 INFO     154 Operators created
+2018-08-26 14:03:01,239 INFO     Search start: logistics-6-3
+2018-08-26 14:03:01,240 INFO     Initial h value: 27.000000
+2018-08-26 14:03:01,313 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:03:01,313 INFO     25 Nodes expanded
+2018-08-26 14:03:01,313 INFO     Search end: logistics-6-3
+2018-08-26 14:03:01,313 INFO     Wall-clock search time: 0.074
+2018-08-26 14:03:01,313 INFO     Plan length: 24
+2018-08-26 14:03:01,329 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:03:01,451 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:01,451 INFO     using search: astar_search
+2018-08-26 14:03:01,451 INFO     using heuristic: hFFHeuristic
+2018-08-26 14:03:01,451 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:01,455 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:03:01,456 INFO     3 Predicates parsed
+2018-08-26 14:03:01,456 INFO     6 Actions parsed
+2018-08-26 14:03:01,456 INFO     15 Objects parsed
+2018-08-26 14:03:01,456 INFO     0 Constants parsed
+2018-08-26 14:03:01,456 INFO     Grounding start: logistics-6-3
+2018-08-26 14:03:01,462 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:03:01,463 INFO     Grounding end: logistics-6-3
+2018-08-26 14:03:01,463 INFO     54 Variables created
+2018-08-26 14:03:01,463 INFO     154 Operators created
+2018-08-26 14:03:01,464 INFO     Search start: logistics-6-3
+2018-08-26 14:03:01,465 INFO     Initial h value: 21.000000
+2018-08-26 14:03:03,440 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:03:03,440 INFO     538 Nodes expanded
+2018-08-26 14:03:03,441 INFO     Search end: logistics-6-3
+2018-08-26 14:03:03,441 INFO     Wall-clock search time: 2.0
+2018-08-26 14:03:03,441 INFO     Plan length: 24
+2018-08-26 14:03:03,457 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:03:03,581 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:03,581 INFO     using search: weighted_astar_search
+2018-08-26 14:03:03,581 INFO     using heuristic: hFFHeuristic
+2018-08-26 14:03:03,581 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:03,585 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:03:03,586 INFO     3 Predicates parsed
+2018-08-26 14:03:03,586 INFO     6 Actions parsed
+2018-08-26 14:03:03,586 INFO     15 Objects parsed
+2018-08-26 14:03:03,587 INFO     0 Constants parsed
+2018-08-26 14:03:03,587 INFO     Grounding start: logistics-6-3
+2018-08-26 14:03:03,591 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:03:03,591 INFO     Grounding end: logistics-6-3
+2018-08-26 14:03:03,591 INFO     54 Variables created
+2018-08-26 14:03:03,592 INFO     154 Operators created
+2018-08-26 14:03:03,592 INFO     Search start: logistics-6-3
+2018-08-26 14:03:03,593 INFO     Initial h value: 21.000000
+2018-08-26 14:03:03,682 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:03:03,682 INFO     28 Nodes expanded
+2018-08-26 14:03:03,682 INFO     Search end: logistics-6-3
+2018-08-26 14:03:03,682 INFO     Wall-clock search time: 0.09
+2018-08-26 14:03:03,682 INFO     Plan length: 24
+2018-08-26 14:03:03,697 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:03:03,803 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:03,803 INFO     using search: astar_search
+2018-08-26 14:03:03,803 INFO     using heuristic: hMaxHeuristic
+2018-08-26 14:03:03,803 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:03:03,807 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:03:03,809 INFO     3 Predicates parsed
+2018-08-26 14:03:03,809 INFO     6 Actions parsed
+2018-08-26 14:03:03,809 INFO     15 Objects parsed
+2018-08-26 14:03:03,809 INFO     0 Constants parsed
+2018-08-26 14:03:03,809 INFO     Grounding start: logistics-6-3
+2018-08-26 14:03:03,817 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:03:03,817 INFO     Grounding end: logistics-6-3
+2018-08-26 14:03:03,817 INFO     54 Variables created
+2018-08-26 14:03:03,817 INFO     154 Operators created
+2018-08-26 14:03:03,818 INFO     Search start: logistics-6-3
+2018-08-26 14:03:03,819 INFO     Initial h value: 6.000000
+2018-08-26 14:10:46,311 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:10:46,312 INFO     133521 Nodes expanded
+2018-08-26 14:10:46,448 INFO     Search end: logistics-6-3
+2018-08-26 14:10:46,448 INFO     Wall-clock search time: 4.6e+02
+2018-08-26 14:10:46,448 INFO     Plan length: 24
+2018-08-26 14:10:46,466 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:10:46,577 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:10:46,577 INFO     using search: weighted_astar_search
+2018-08-26 14:10:46,577 INFO     using heuristic: hMaxHeuristic
+2018-08-26 14:10:46,577 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:10:46,580 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task10.pddl
+2018-08-26 14:10:46,581 INFO     3 Predicates parsed
+2018-08-26 14:10:46,581 INFO     6 Actions parsed
+2018-08-26 14:10:46,581 INFO     15 Objects parsed
+2018-08-26 14:10:46,581 INFO     0 Constants parsed
+2018-08-26 14:10:46,581 INFO     Grounding start: logistics-6-3
+2018-08-26 14:10:46,586 INFO     Relevance analysis removed 0 facts
+2018-08-26 14:10:46,586 INFO     Grounding end: logistics-6-3
+2018-08-26 14:10:46,586 INFO     54 Variables created
+2018-08-26 14:10:46,586 INFO     154 Operators created
+2018-08-26 14:10:46,587 INFO     Search start: logistics-6-3
+2018-08-26 14:10:46,587 INFO     Initial h value: 6.000000
+2018-08-26 14:10:48,338 INFO     Goal reached. Start extraction of solution.
+2018-08-26 14:10:48,348 INFO     667 Nodes expanded
+2018-08-26 14:10:48,350 INFO     Search end: logistics-6-3
+2018-08-26 14:10:48,350 INFO     Wall-clock search time: 1.8
+2018-08-26 14:10:48,350 INFO     Plan length: 28
+2018-08-26 14:10:48,357 INFO     validate could not be found on the PATH so the plan can not be validated.
+2018-08-26 14:10:48,471 INFO     Found domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:10:48,471 INFO     using search: astar_search
+2018-08-26 14:10:48,471 INFO     using heuristic: BlindHeuristic
+2018-08-26 14:10:48,471 INFO     Parsing Domain /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/domain.pddl
+2018-08-26 14:10:48,474 INFO     Parsing Problem /Users/christianlammers/Downloads/pyperplan/benchmarks/logistics/task11.pddl
+2018-08-26 14:10:48,485 INFO     3 Predicates parsed
+2018-08-26 14:10:48,485 INFO     6 Actions parsed
+2018-08-26 14:10:48,485 INFO     22 Objects parsed
+2018-08-26 14:10:48,485 INFO     0 Constants parsed
+2018-08-26 14:10:48,485 INFO     Grounding start: logistics-7-0
+2018-08-26 14:10:48,502 INFO     Relevance analysis removed 20 facts
+2018-08-26 14:10:48,502 INFO     Grounding end: logistics-7-0
+2018-08-26 14:10:48,502 INFO     114 Variables created
+2018-08-26 14:10:48,502 INFO     360 Operators created
+2018-08-26 14:10:48,502 INFO     Search start: logistics-7-0
+2018-08-26 14:10:48,502 INFO     Initial h value: 1.000000
